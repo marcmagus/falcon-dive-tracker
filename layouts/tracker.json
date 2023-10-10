@@ -28,20 +28,29 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Map 1",
+                            "title": "Overworld",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "map1"
+                                    "overworld"
                                 ]
                             }
                         },
                         {
-                            "title": "Map 2",
+                            "title": "Underground",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "map2"
+                                    "underground"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Moon",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "moon"
                                 ]
                             }
                         }
@@ -79,20 +88,29 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Map 1",
+                            "title": "Overworld",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "map1"
+                                    "overworld"
                                 ]
                             }
                         },
                         {
-                            "title": "Map 2",
+                            "title": "Underground",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "map2"
+                                    "underground"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Moon",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "moon"
                                 ]
                             }
                         }

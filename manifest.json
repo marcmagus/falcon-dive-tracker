@@ -2,12 +2,12 @@
 // it contains basic information about your pack
 // for more info on the manifest check: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#manifest
 {
-    "name": "Template Pack for PopTracker",
-    "game_name": "<put your game title here>",
+    "name": "Falcon Dive Tracker",
+    "game_name": "Falcon Dive",
     "package_version": "1.0.0.0",
-    "package_uid": "template_pack",
-    "platform": "snes", //enables SNES memory autotracking interface - remove/change if not needed
-    "author": "Cyb3R",
+    "package_uid": "falcon-dive",
+    "platform": "windows", //enables SNES memory autotracking interface - remove/change if not needed
+    "author": "marcmagus",
     "variants": {
         "standard": {
             "display_name": "Map Tracker",
