@@ -1,57 +1,503 @@
 [
     {
-        "name": "Example Parent",
+        "name": "Mist Cave",
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Mist Dragon"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 280,
+                "y": 332
+            }
+        ]
+    },
+    {
+        "name": "Mist Town",
+        "access_rules": [
+            "bomb-ring"
+        ],
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Mist Combat"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 315,
+                "y": 332
+            }
+        ]
+    },
+    {
+        "name": "Kaipo",
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Kaipo Inn",
+                "access_rules": [
+                    "kaipo-pass"
+                ],
+            },
+            {
+                "item_count": 1,
+                "name": "Kaipo Sand Ruby",
+                "access_rules": [
+                    "sand-ruby"
+                ]
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 407,
+                "y": 285
+            }
+        ]
+    },
+    {
+        "name": "Waterfall",
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Waterfall"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 407,
+                "y": 167
+            }
+        ]
+    },
+    {
+        "name": "Damcyan",
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Castle Boss"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 388,
+                "y": 142
+            }
+        ]
+    },
+    {
+        "name": "Antlion Cave",
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Antlion"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 442,
+                "y": 136
+            }
+        ]
+    },
+    {
+        "name": "Mt. Hobs",
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Mt. Hobs Boss"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 518,
+                "y": 114
+            }
+        ]
+    },
+    {
+        "name": "Fabul",
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Fabul Rush"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 689,
+                "y": 142
+            }
+        ]
+    },
+    {
+        "name": "Mt. Ordeals",
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Milon - no reward"
+            },
+            {
+                "item_count": 1,
+                "name": "Milon Z - no reward"
+            },
+            {
+                "item_count": 1,
+                "name": "DK Cecil"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 698,
+                "y": 582
+            }
+        ]
+    },
+    {
+        "name": "Baron Inn",
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Guards - no reward"
+            },
+            {
+                "item_count": 1,
+                "name": "Yang"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 339,
+                "y": 457
+            }
+        ]
+    },
+    {
+        "name": "Baron Castle",
+        "access_rules": [
+            "baron-key"
+        ],
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Baigan - no reward"
+            },
+            {
+                "item_count": 1,
+                "name": "Cagnazzo"
+            },
+            {
+                "item_count": 1,
+                "name": "Odin"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 330,
+                "y": 448
+            }
+        ]
+    },
+    {
+        "name": "Cave Magnes",
+        "access_rules": [
+            "twin-harp"
+        ],
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Dark Elf"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 249,
+                "y": 127
+            }
+        ]
+    },
+    {
+        "name": "Tower of Zot",
+        "access_rules": [
+            "earth-crystal"
+        ],
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Magus Sisters - no reward"
+            },
+            {
+                "item_count": 1,
+                "name": "Valvalis"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 124,
+                "y": 215
+            }
+        ]
+    },
+    {
+        "name": "Adamant Grotto",
+        "access_rules": [
+            "hovercraft,rat-tail"
+        ],
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Rat Tail"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 702,
+                "y": 386
+            }
+        ]
+    },
+    {
+        "name": "Agart",
+        "access_rules": [
+            "nothing_3"
+        ],
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Nothing Vending Machine"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 343,
+                "y": 635
+            }
+        ]
+    },
+    {
+        "name": "Underground",
+        "access_rules": [
+            "magma-rock",
+            "hovercraft"
+        ],
         "children": [
             {
-                "name": "Example Location 1",
-                "access_rules": [
-                    //read as: progressive_2 or toggle                    
-                    "progressive_2",
-                    "toggle"                    
-                ],
+                "name": "Dwarf Castle",
                 "sections": [
                     {
-                        "name": "Example Section 1",
-                        "item_count": 1
+                        "item_count": 1,
+                        "name": "Calcabrena - no reward"
                     },
                     {
-                        "name": "Example Section 2",
-                        "item_count": 3
+                        "item_count": 1,
+                        "name": "Golbez"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "map1",
-                        "x": 1750,
-                        "y": 700
-                    },
-                    {
-                        "map": "map2",
-                        "x": 1000,
-                        "y": 500
+                        "map": "underground",
+                        "x": 550,
+                        "y": 462
                     }
                 ]
             },
             {
-                "name": "Example Location 2",
-                "access_rules": [
-                    //read as: progressive_toggle_2 and has more then 4 consumable
-                    "progressive_toggle_2, $has_more_then_n_consumable|4"                   
-                ],
+                "name": "Lower Babil",
                 "sections": [
                     {
-                        "name": "Example Section 1",
-                        "item_count": 1
+                        "item_count": 1,
+                        "name": "Dr. Lugae"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "Super Cannon",
+                        "access_rules": [
+                            "lugae-key"
+                        ],
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "map1",
-                        "x": 1500,
-                        "y": 400
+                        "map": "underground",
+                        "x": 264,
+                        "y": 90
                     }
                 ]
-            }            
+            },
+            {
+                "name": "Feymarch",
+                "sections": [
+                    {
+                        "item_count": 1,
+                        "name": "Asura"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "Leviathan"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "underground",
+                        "x": 144,
+                        "y": 485
+                    }
+                ]
+            },
+            {
+                "name": "Sealed Cave",
+                "access_rules": [
+                    "lucas-necklace"
+                ],
+                "sections": [
+                    {
+                        "item_count": 1,
+                        "name": "Evil Wall"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "underground",
+                        "x": 250,
+                        "y": 612
+                    }
+                ]
+            },
+            {
+                "name": "Sylvan Cave",
+                "access_rules": [
+                    "frying-pan"
+                ],
+                "sections": [
+                    {
+                        "item_count": 1,
+                        "name": "Yang Fight"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "underground",
+                        "x": 67,
+                        "y": 85
+                    }
+                ]
+            },
         ]
-    }
+    },
+    {
+        "name": "Upper Babil",
+        "access_rules": [
+            "hovercraft"
+        ],
+        "sections": [
+            {
+                "item_count": 1,
+                "name": "Eblan - no reward"
+            },
+            {
+                "item_count": 1,
+                "name": "Rubicante - no reward"
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "overworld",
+                "x": 96,
+                "y": 680
+            }
+        ]
+    },
+    {
+        "name": "Moon",
+        "access_rules": [
+            "dark-crystal"
+        ],
+        "children": [
+            {
+                "name": "Giant of Babil",
+                "sections": [
+                    {
+                        "item_count": 1,
+                        "name": "Elements - no reward"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "CPU"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 134,
+                        "y": 684
+                    }
+                ]
+            },
+            {
+                "name": "Bahamut Cave",
+                "sections": [
+                    {
+                        "item_count": 1,
+                        "name": "Bahamut"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "moon",
+                        "x": 693,
+                        "y": 445
+                    }
+                ]
+            },
+            {
+                "name": "Lunar Subterranae",
+                "sections": [
+                    {
+                        "item_count": 1,
+                        "name": "Murasame Altar"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "Crystal Sword Altar"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "White Spear Room"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "Ribbon Room"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "Masamune Altar"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "moon",
+                        "x": 282,
+                        "y": 468
+                    }
+                ]
+            }
+        ]
+    },
 ]
