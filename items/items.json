@@ -1,10 +1,100 @@
 //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
 [
     {
-        "name": "Toggle",
+        "name": "Bomb Ring",
         "type": "toggle",
-        "img": "images/items/toggle.png",
-        "codes": "toggle"
+        "img": "images/items/bomb-ring.png",
+        "codes": "bomb-ring"
+    },
+    {
+        "name": "Twin Harp",
+        "type": "toggle",
+        "img": "images/items/twin-harp.png",
+        "codes": "twin-harp"
+    },
+    {
+        "name": "Rat Tail",
+        "type": "toggle",
+        "img": "images/items/rat-tail.png",
+        "codes": "rat-tail"
+    },
+    {
+        "name": "Dark Crystal",
+        "type": "toggle",
+        "img": "images/items/dark-crystal.png",
+        "codes": "dark-crystal"
+    },
+    {
+        "name": "Kaipo Inn Pass",
+        "type": "toggle",
+        "img": "images/items/kaipo-pass.png",
+        "codes": "kaipo-pass"
+    },
+    {
+        "name": "Earth Crystal",
+        "type": "toggle",
+        "img": "images/items/earth-crystal.png",
+        "codes": "earth-crystal"
+    },
+    {
+        "name": "Dr. Lugae's Key",
+        "type": "toggle",
+        "img": "images/items/lugae-key.png",
+        "codes": "lugae-key"
+    },
+    {
+        "name": "Adamantite",
+        "type": "toggle",
+        "img": "images/items/adamantite.png",
+        "codes": "adamantite"
+    },
+    {
+        "name": "Sand Ruby",
+        "type": "toggle",
+        "img": "images/items/sand-ruby.png",
+        "codes": "sand-ruby"
+    },
+    {
+        "name": "Magma Rock",
+        "type": "toggle",
+        "img": "images/items/magma-rock.png",
+        "codes": "magma-rock"
+    },
+    {
+        "name": "Luca's Necklace",
+        "type": "toggle",
+        "img": "images/items/lucas-necklace.png",
+        "codes": "lucas-necklace"
+    },
+    {
+        "name": "Sword of Legend",
+        "type": "toggle",
+        "img": "images/items/legend-sword.png",
+        "codes": "legend-sword"
+    },
+    {
+        "name": "Baron Key",
+        "type": "toggle",
+        "img": "images/items/baron-key.png",
+        "codes": "baron-key"
+    },
+    {
+        "name": "Hovercraft",
+        "type": "toggle",
+        "img": "images/items/hovercraft.png",
+        "codes": "hovercraft"
+    },
+    {
+        "name": "Frying Pan",
+        "type": "toggle",
+        "img": "images/items/frying-pan.png",
+        "codes": "frying-pan"
+    },
+    {
+        "name": "Pink Tail",
+        "type": "toggle",
+        "img": "images/items/pink-tail.png",
+        "codes": "pink-tail"
     },
     {
         "name": "Progressive",
@@ -50,6 +140,86 @@
                 "img": "images/items/progressive_2.png",
                 "codes": "progressive_toggle_2",
                 "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Crystal Shards",
+        "type": "progressive",
+        "allow_disabled": false,
+        "capturable": "true",
+        "inherit_codes": "true",
+        "stages": [
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "@disabled"
+            },
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "overlay|images/overlay_1.png"
+            },
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "overlay|images/overlay_2.png"
+            },
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "overlay|images/overlay_3.png",
+                "codes": "crystal"
+            },
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "overlay|images/overlay_4.png"
+            }
+        ]
+    },
+    {
+        "name": "Nothing",
+        "type": "progressive",
+        "allow_disabled": false,
+        "capturable": "true",
+        "stages": [
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "@disabled"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_1.png"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_2.png"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_3.png",
+                "codes": "nothing_3"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_4.png",
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_5.png",
+                "codes": "nothing_5"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_6.png",
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_7.png",
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_8.png",
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_9.png",
             }
         ]
     }

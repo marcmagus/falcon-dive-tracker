@@ -17,12 +17,26 @@
                         "h_alignment": "left",
                         "rows": [
                             [
-                                "toggle",
-                                "progressive"           
+                                "bomb-ring",
+                                "twin-harp",
+                                "rat-tail",
+                                "dark-crystal",
+                                "kaipo-pass",
+                                "earth-crystal",
+                                "lugae-key",
+                                "adamantite",
+                                "crystal",
                             ],
                             [
-                                "consumable",
-                                "progressive_toggle"
+                                "sand-ruby",
+                                "magma-rock",
+                                "lucas-necklace",
+                                "legend-sword",
+                                "baron-key",
+                                "hovercraft",
+                                "frying-pan",
+                                "pink-tail",
+                                "nothing_3"
                             ]
                         ]
                     }
