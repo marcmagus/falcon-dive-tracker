@@ -1,0 +1,73 @@
+// sets layouts for shadred items grids
+// bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
+{
+    "shared_boss_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "4,4",
+                        "h_alignment": "left",
+                        "rows": [
+                            [
+                                "boss-mist-dragon",
+                                "boss-rydia",
+                                "boss-baron-soldiers",
+                                "boss-waterhag",
+                                "boss-octomamm",
+                                "boss-tellah",
+                                "boss-antlion",
+                                "boss-mombomb",
+                                "boss-fabul-gauntlet",
+                                "boss-scarmiglione",
+                            ],
+                            [
+                                "boss-scarmiglione-z",
+                                "boss-dkcecil",
+                                "boss-baron-guards",
+                                "boss-yang",
+                                "boss-baigan",
+                                "boss-cagnazzo",
+                                "boss-odin",
+                                "boss-dark-elf",
+                                "boss-magus-sisters",
+                                "boss-barbariccia",
+                            ],
+                            [
+                                "boss-calcobrena",
+                                "boss-golbez",
+                                "boss-lugae",
+                                "boss-dark-imps",
+                                "boss-asura",
+                                "boss-leviathan",
+                                "boss-demon-wall",
+                                "boss-sylvan-cave",
+                                "boss-king-queen-eblan",
+                                "boss-rubicante",
+                            ],
+                            [
+                                "boss-bahamut",
+                                "boss-elements",
+                                "boss-cpu",
+                                "boss-white-dragon",
+                                "boss-dark-bahamut",
+                                "boss-plague",
+                                "boss-lunasaur",
+                                "boss-ogopogo",
+                                "boss-rat-tail",
+                                "boss-nothing-machine",
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

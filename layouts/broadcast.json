@@ -12,6 +12,17 @@
                 "content": [
                     {
                         "type": "layout",
+                        "key": "shared_boss_grid"
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "layout",
                         "key": "shared_item_grid"
                     }
                 ]

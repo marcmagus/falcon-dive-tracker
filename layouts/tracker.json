@@ -53,6 +53,17 @@
                                     "moon"
                                 ]
                             }
+                        },
+                        {
+                            "title": "All",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "overworld",
+                                    "underground",
+                                    "moon"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -81,38 +92,52 @@
                                 "v_alignment": "center",
                                 "key": "shared_item_grid"
                             }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Bosses",
+                            "dock": "right",
+                            "content": {
+                                "type": "layout",
+                                "key": "shared_boss_grid"
+                            }
                         }
                     ]
                 },
                 {
-                    "type": "tabbed",
-                    "tabs": [
+                    "type": "dock",
+                    "dock": "top",
+                    "h_alignment": "stretch",
+                    "v_alignment": "stretch",
+                    "content": [
                         {
-                            "title": "Overworld",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "overworld"
-                                ]
-                            }
+                            "type": "map",
+                            "h_alignment": "stretch",
+                            "v_alignment": "stretch",
+                            "maps": [
+                                "overworld"
+                            ]
                         },
                         {
-                            "title": "Underground",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "underground"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Moon",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "moon"
-                                ]
-                            }
+                            "type": "dock",
+                            "dock": "right",
+                            "orientation": "vertical",
+                            "h_alignment": "stretch",
+                            "v_alignment": "stretch",
+                            "content": [
+                                {
+                                    "type": "map",
+                                    "maps": [
+                                        "underground",
+                                    ]
+                                },
+                                {
+                                    "type": "map",
+                                    "maps": [
+                                        "moon",
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

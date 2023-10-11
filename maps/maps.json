@@ -4,19 +4,19 @@
         "name": "overworld",
         "location_size": 24,
         "location_border_thickness": 4,
-        "img": "images/maps/ffiv-pr-overworld.png"
+        "img": "images/maps/gps_ow.png"
     },
     {
         "name": "underground",
         "location_size": 24,
         "location_border_thickness": 4,
-        "img": "images/maps/ffiv-pr-underground.png"
+        "img": "images/maps/gps_ug.png"
     },
     {
         "name": "moon",
         "location_size": 24,
         "location_border_thickness": 4,
-        "img": "images/maps/ffiv-pr-moon.png"
+        "img": "images/maps/gps_moon.png"
     },
     {
         "name": "map1",

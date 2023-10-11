@@ -222,5 +222,246 @@
                 "img_mods": "overlay|images/overlay_9.png",
             }
         ]
-    }
+    },
+// Below here are "Items" for Location grid
+    {
+        "name": "Mist Dragon",
+        "type": "toggle",
+        "img": "images/bosses/mist-dragon.png",
+        "codes": "boss-mist-dragon"
+    },
+    {
+        "name": "Rydia",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-rydia.png",
+        "codes": "boss-rydia"
+    },
+    {
+        "name": "Baron Soldiers",
+        "type": "toggle",
+        "img": "images/bosses/baron-soldiers.png",
+        "codes": "boss-baron-soldiers"
+    },
+    {
+        "name": "Sahagin",
+        "type": "toggle",
+        "img": "images/bosses/waterhag.png",
+        "codes": "boss-waterhag"
+    },
+    {
+        "name": "Octomammoth",
+        "type": "toggle",
+        "img": "images/bosses/octomamm.png",
+        "codes": "boss-octomamm"
+    },
+    {
+        "name": "Tellah",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-tellah.png",
+        "codes": "boss-tellah"
+    },
+    {
+        "name": "Antlion",
+        "type": "toggle",
+        "img": "images/bosses/antlion.png",
+        "codes": "boss-antlion"
+    },
+    {
+        "name": "Mom Bomb",
+        "type": "toggle",
+        "img": "images/bosses/mombomb.png",
+        "codes": "boss-mombomb"
+    },
+    {
+        "name": "Fabul Gauntlet",
+        "type": "toggle",
+        "img": "images/bosses/fabul-gauntlet.png",
+        "codes": "boss-fabul-gauntlet"
+    },
+    {
+        "name": "Scarmiglione",
+        "type": "toggle",
+        "img": "images/bosses/scarmiglione.png",
+        "codes": "boss-scarmiglione"
+    },
+    {
+        "name": "Scarmiglione Z",
+        "type": "toggle",
+        "img": "images/bosses/scarmiglione-z.png",
+        "codes": "boss-scarmiglione-z"
+    },
+    {
+        "name": "Dark Knight Cecil",
+        "type": "toggle",
+        "img": "images/bosses/dkcecil.png",
+        "codes": "boss-dkcecil"
+    },
+    {
+        "name": "Baron Guards",
+        "type": "toggle",
+        "img": "images/bosses/baron-guards.png",
+        "codes": "boss-baron-guards"
+    },
+    {
+        "name": "Yang",
+        "type": "toggle",
+        "img": "images/bosses/yang.png",
+        "codes": "boss-yang"
+    },
+    {
+        "name": "Baigan",
+        "type": "toggle",
+        "img": "images/bosses/baigan.png",
+        "codes": "boss-baigan"
+    },
+    {
+        "name": "Cagnazzo",
+        "type": "toggle",
+        "img": "images/bosses/cagnazzo.png",
+        "codes": "boss-cagnazzo"
+    },
+    {
+        "name": "Odin",
+        "type": "toggle",
+        "img": "images/bosses/odin.png",
+        "codes": "boss-odin"
+    },
+    {
+        "name": "Dark Elf",
+        "type": "toggle",
+        "img": "images/bosses/dark-elf.png",
+        "codes": "boss-dark-elf"
+    },
+    {
+        "name": "Magus Sisters",
+        "type": "toggle",
+        "img": "images/bosses/magus-sisters.png",
+        "codes": "boss-magus-sisters"
+    },
+    {
+        "name": "Barbariccia",
+        "type": "toggle",
+        "img": "images/bosses/barbariccia.png",
+        "codes": "boss-barbariccia"
+    },
+    {
+        "name": "Rat Tail",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-tail-npc.png",
+        "codes": "boss-rat-tail"
+    },
+    {
+        "name": "Nothing Vending Machine",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-corio.png",
+        "codes": "boss-nothing-machine"
+    },
+    {
+        "name": "Calcobrena",
+        "type": "toggle",
+        "img": "images/bosses/calcobrena.png",
+        "codes": "boss-calcobrena"
+    },
+    {
+        "name": "Golbez",
+        "type": "toggle",
+        "img": "images/bosses/golbez.png",
+        "codes": "boss-golbez"
+    },
+    {
+        "name": "Dr. Lugae",
+        "type": "toggle",
+        "img": "images/bosses/lugae.png",
+        "codes": "boss-lugae"
+    },
+    {
+        "name": "Dark Imps",
+        "type": "toggle",
+        "img": "images/bosses/dark-imps.png",
+        "codes": "boss-dark-imps"
+    },
+    {
+        "name": "Asura",
+        "type": "toggle",
+        "img": "images/bosses/asura.png",
+        "codes": "boss-asura"
+    },
+    {
+        "name": "Leviathan",
+        "type": "toggle",
+        "img": "images/bosses/leviathan.png",
+        "codes": "boss-leviathan"
+    },
+    {
+        "name": "Demon Wall",
+        "type": "toggle",
+        "img": "images/bosses/demon-wall.png",
+        "codes": "boss-demon-wall"
+    },
+    {
+        "name": "Sylphs",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-sylph.png",
+        "codes": "boss-sylvan-cave"
+    },
+    {
+        "name": "King and Queen Eblan",
+        "type": "toggle",
+        "img": "images/bosses/king-queen-eblan.png",
+        "codes": "boss-king-queen-eblan"
+    },
+    {
+        "name": "Rubicante",
+        "type": "toggle",
+        "img": "images/bosses/rubicante.png",
+        "codes": "boss-rubicante"
+    },
+    {
+        "name": "Bahamut",
+        "type": "toggle",
+        "img": "images/bosses/bahamut.png",
+        "codes": "boss-bahamut"
+    },
+    {
+        "name": "Elements",
+        "type": "toggle",
+        "img": "images/bosses/elements.png",
+        "codes": "boss-elements"
+    },
+    {
+        "name": "CPU",
+        "type": "toggle",
+        "img": "images/bosses/cpu.png",
+        "codes": "boss-cpu"
+    },
+    {
+        "name": "White Dragon",
+        "type": "toggle",
+        "img": "images/bosses/white-dragon.png",
+        "codes": "boss-white-dragon"
+    },
+    {
+        "name": "Dark Bahamut",
+        "type": "toggle",
+        "img": "images/bosses/dark-bahamut.png",
+        "codes": "boss-dark-bahamut"
+    },
+    {
+        "name": "Plague",
+        "type": "toggle",
+        "img": "images/bosses/plague.png",
+        "codes": "boss-plague"
+    },
+    {
+        "name": "Lunasaur",
+        "type": "toggle",
+        "img": "images/bosses/lunasaur.png",
+        "codes": "boss-lunasaur"
+    },
+    {
+        "name": "Ogopogo",
+        "type": "toggle",
+        "img": "images/bosses/ogopogo.png",
+        "codes": "boss-ogopogo"
+    },
 ]
