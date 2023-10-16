@@ -85,8 +85,8 @@
                 "name": "Damcyan",
                 "sections": [
                     {
-                        "hosted_item": "boss-tellah",
-                        "name": "Tellah"
+                        "hosted_item": "boss-edward",
+                        "name": "Edward"
                     }
                 ],
                 "map_locations": [
@@ -184,8 +184,8 @@
                 "map_locations": [
                     {
                         "map": "overworld",
-                        "x": 339,
-                        "y": 457
+                        "x": 344,
+                        "y": 462
                     }
                 ]
             },
@@ -211,8 +211,8 @@
                 "map_locations": [
                     {
                         "map": "overworld",
-                        "x": 330,
-                        "y": 448
+                        "x": 325,
+                        "y": 443
                     }
                 ]
             },
@@ -318,8 +318,8 @@
                         "map_locations": [
                             {
                                 "map": "underground",
-                                "x": 550,
-                                "y": 462
+                                "x": 611,
+                                "y": 488
                             }
                         ]
                     },
@@ -341,8 +341,8 @@
                         "map_locations": [
                             {
                                 "map": "underground",
-                                "x": 264,
-                                "y": 90
+                                "x": 329,
+                                "y": 98
                             }
                         ]
                     },
@@ -361,8 +361,8 @@
                         "map_locations": [
                             {
                                 "map": "underground",
-                                "x": 144,
-                                "y": 485
+                                "x": 208,
+                                "y": 514
                             }
                         ]
                     },
@@ -399,8 +399,8 @@
                         "map_locations": [
                             {
                                 "map": "underground",
-                                "x": 67,
-                                "y": 85
+                                "x": 130,
+                                "y": 115
                             }
                         ]
                     },
@@ -456,7 +456,7 @@
                         "sections": [
                             {
                                 "hosted_item": "boss-elements",
-                                "name": "Elements - no reward"
+                                "name": "Elemental Lords"
                             },
                             {
                                 "hosted_item": "boss-cpu",

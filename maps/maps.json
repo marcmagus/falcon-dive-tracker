@@ -2,32 +2,20 @@
 [
     {
         "name": "overworld",
-        "location_size": 24,
+        "location_size": 16,
         "location_border_thickness": 4,
         "img": "images/maps/gps_ow.png"
     },
     {
         "name": "underground",
-        "location_size": 24,
+        "location_size": 32,
         "location_border_thickness": 4,
         "img": "images/maps/gps_ug.png"
     },
     {
         "name": "moon",
-        "location_size": 24,
+        "location_size": 32,
         "location_border_thickness": 4,
         "img": "images/maps/gps_moon.png"
-    },
-    {
-        "name": "map1",
-        "location_size": 48,
-        "location_border_thickness": 4,
-        "img": "images/maps/map.png"
-    },
-    {
-        "name": "map2",
-        "location_size": 48,
-        "location_border_thickness": 4,
-        "img": "images/maps/map_2.png"
     }
 ]

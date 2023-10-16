@@ -149,6 +149,7 @@
         "allow_disabled": false,
         "capturable": "true",
         "inherit_codes": "true",
+        "codes": "crystal-shards",
         "stages": [
             {
                 "img": "images/items/crystal-shard.png",
@@ -156,11 +157,11 @@
             },
             {
                 "img": "images/items/crystal-shard.png",
-                "img_mods": "overlay|images/overlay_1.png"
+                "img_mods": "overlay|images/overlay_1.png, @disabled"
             },
             {
                 "img": "images/items/crystal-shard.png",
-                "img_mods": "overlay|images/overlay_2.png"
+                "img_mods": "overlay|images/overlay_2.png, @disabled"
             },
             {
                 "img": "images/items/crystal-shard.png",
@@ -178,6 +179,7 @@
         "type": "progressive",
         "allow_disabled": false,
         "capturable": "true",
+        "codes": "nothings",
         "stages": [
             {
                 "img": "images/items/nothing.png",
@@ -185,11 +187,11 @@
             },
             {
                 "img": "images/items/nothing.png",
-                "img_mods": "overlay|images/overlay_1.png"
+                "img_mods": "overlay|images/overlay_1.png, @disabled"
             },
             {
                 "img": "images/items/nothing.png",
-                "img_mods": "overlay|images/overlay_2.png"
+                "img_mods": "overlay|images/overlay_2.png, @disabled"
             },
             {
                 "img": "images/items/nothing.png",
@@ -255,10 +257,10 @@
         "codes": "boss-octomamm"
     },
     {
-        "name": "Tellah",
+        "name": "Edward",
         "type": "toggle",
-        "img": "images/bosses/ff4pr-tellah.png",
-        "codes": "boss-tellah"
+        "img": "images/bosses/ff4pr-edward.png",
+        "codes": "boss-edward"
     },
     {
         "name": "Antlion",
@@ -423,7 +425,7 @@
         "codes": "boss-bahamut"
     },
     {
-        "name": "Elements",
+        "name": "Elemental Lords",
         "type": "toggle",
         "img": "images/bosses/elements.png",
         "codes": "boss-elements"

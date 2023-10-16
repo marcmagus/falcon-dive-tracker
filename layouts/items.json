@@ -14,29 +14,30 @@
                     {
                         "type": "itemgrid",
                         "item_margin": "4,4",
-                        "h_alignment": "left",
                         "rows": [
                             [
                                 "bomb-ring",
-                                "twin-harp",
-                                "rat-tail",
-                                "dark-crystal",
                                 "kaipo-pass",
+                                "sand-ruby",
+                                "baron-key",
+                                "twin-harp",
                                 "earth-crystal",
-                                "lugae-key",
-                                "adamantite",
-                                "crystal",
                             ],
                             [
-                                "sand-ruby",
                                 "magma-rock",
+                                "lugae-key",
                                 "lucas-necklace",
-                                "legend-sword",
-                                "baron-key",
-                                "hovercraft",
                                 "frying-pan",
+                                "hovercraft",
+                                "dark-crystal",
+                            ],
+                            [
+                                "rat-tail",
                                 "pink-tail",
-                                "nothing_3"
+                                "adamantite",
+                                "legend-sword",
+                                "nothing_3",
+                                "crystal",
                             ]
                         ]
                     }

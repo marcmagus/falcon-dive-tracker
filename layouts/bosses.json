@@ -14,7 +14,10 @@
                     {
                         "type": "itemgrid",
                         "item_margin": "4,4",
-                        "h_alignment": "left",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "item_h_alignment": "center",
+                        "item_v_alignment": "center",
                         "rows": [
                             [
                                 "boss-mist-dragon",
@@ -22,39 +25,41 @@
                                 "boss-baron-soldiers",
                                 "boss-waterhag",
                                 "boss-octomamm",
-                                "boss-tellah",
+                                "boss-edward",
                                 "boss-antlion",
                                 "boss-mombomb",
-                                "boss-fabul-gauntlet",
-                                "boss-scarmiglione",
                             ],
                             [
+                                "boss-fabul-gauntlet",
+                                "boss-scarmiglione",
                                 "boss-scarmiglione-z",
                                 "boss-dkcecil",
                                 "boss-baron-guards",
                                 "boss-yang",
                                 "boss-baigan",
                                 "boss-cagnazzo",
+                            ],
+                            [
                                 "boss-odin",
                                 "boss-dark-elf",
                                 "boss-magus-sisters",
                                 "boss-barbariccia",
-                            ],
-                            [
                                 "boss-calcobrena",
                                 "boss-golbez",
                                 "boss-lugae",
                                 "boss-dark-imps",
+                            ],
+                            [
                                 "boss-asura",
                                 "boss-leviathan",
                                 "boss-demon-wall",
                                 "boss-sylvan-cave",
                                 "boss-king-queen-eblan",
                                 "boss-rubicante",
-                            ],
-                            [
                                 "boss-bahamut",
                                 "boss-elements",
+                            ],
+                            [
                                 "boss-cpu",
                                 "boss-white-dragon",
                                 "boss-dark-bahamut",
@@ -63,7 +68,7 @@
                                 "boss-ogopogo",
                                 "boss-rat-tail",
                                 "boss-nothing-machine",
-                            ]
+                            ],
                         ]
                     }
                 ]

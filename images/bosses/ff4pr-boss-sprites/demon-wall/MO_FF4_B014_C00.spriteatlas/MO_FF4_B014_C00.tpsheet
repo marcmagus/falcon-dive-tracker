@@ -1,0 +1,8 @@
+:format=40300
+:texture=MO_FF4_B014_C00.png
+:size=32x32
+:pivotpoints=enabled
+:borders=enabled
+:alphahandling=KeepTransparentPixels
+
+Default_00(Clone);0;0;8;32; 0.5;0; 0;0;0;0; 4;0;32;8;32;0;0;8;0; 2;0;1;2;2;1;3
