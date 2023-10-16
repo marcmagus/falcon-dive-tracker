@@ -1,19 +1,25 @@
-# Template Pack for PopTracker
+# Falcon Dive Tracker Package for PopTracker
 
-This a template tracker package for PopTracker.
+This is a tracker package for PopTracker or other compatible programs to use with [Final Fantasy IV: Falcon Dive](https://github.com/gameboy9/FF4FalconDive), a randomizer for Final Fantasy IV: Pixel Remaster.
 
-Includes examples for AP and SNES memory autotracking and beginner-friendly explanations in the pack.
+PopTracker can be found [here](https://github.com/black-sliver/PopTracker/releases).
+
+Alternatively, EmoTracker can be found [here](https://emotracker.net). I am unable to test or debug the pack under EmoTracker, but it might just work.
+
+This package is based on Cyb3RGER's [Template Pack for PopTracker](https://github.com/Cyb3RGER/template_pack/tree/d98851c1ed514a78644e14eabb36d28103c91eb3).
 
 ## Installation
 
-Just download the lastest build or source and put in your packs folder (unpacked).
+Just download the latest build and put in your packs folder (as a zip or unpacked, both work).
 
-## More Info
+### PopTracker
 
-Check out PopTrackers Documentation on packs [here](https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md)
+For PopTracker the packs folder can be under `USER/Documents/PopTracker/packs`, `USER/PopTracker/packs` or `APP/packs`, where `USER` stands for your user directory and `APP` for the PopTracker installation directory.
 
-Still having trouble realizing your pack and looking for help or just want more information about everything PopTracker? Check out the ['Unofficial' PopTracker Discord Server](https://discord.com/invite/gwThqMCPgK)!
+### EmoTracker
 
-## License
+For EmoTracker the packs folder can be found under `USER/Documents/EmoTracker/packs`, where `USER` stands for your user directory.
 
-Feel free to use this template without credit for all your PopTracker packs!
+## Autotracking
+
+There is no autotracking support at this time. (Hopefully coming soon)

@@ -6,7 +6,7 @@
     "game_name": "Falcon Dive",
     "package_version": "1.0.0.0",
     "package_uid": "falcon-dive",
-    "platform": "windows", //enables SNES memory autotracking interface - remove/change if not needed
+    "platform": "windows",
     "author": "marcmagus",
     "variants": {
         "standard": {
