@@ -14,7 +14,7 @@
             "flags": [
                 // "ap" //enables AP autotracking interface - remove if not needed
                 "uat", // use UAT protocol for auto-tracking
-                "uat-bridge" // auto-start UAT bridge if available
+                // "uat-bridge" // auto-start UAT bridge if available -- not implemented
             ]
         },
         "var_itemsonly": {
@@ -22,7 +22,7 @@
             "flags": [
                 // "ap" //enables AP autotracking interface - remove if not needed
                 "uat", // use UAT protocol for auto-tracking
-                "uat-bridge" // auto-start UAT bridge if available
+                // "uat-bridge" // auto-start UAT bridge if available -- not implemented
             ]
         }
     }

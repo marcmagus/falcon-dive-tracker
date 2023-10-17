@@ -1,0 +1,188 @@
+#!/usr/bin/perl
+
+use FindBin;
+use lib "$FindBin::RealBin/lib/perl5";
+use AnyEvent::WebSocket::Client;
+use AnyEvent::Filesys::Notify;
+
+use JSON::XS;
+use POSIX qw(ctime);
+use File::Basename;
+use Cwd 'abs_path';
+use File::Temp;
+
+$coder = JSON::XS->new->pretty;
+#use Hash::Diff qw( diff );
+
+#my $binpath = (fileparse(abs_path(__FILE__)))[1];
+my $binpath = $FindBin::RealBin;
+my ($savefile) = @ARGV;
+if (not defined $savefile) {
+    die "Usage: $0 savefile\n";
+}
+
+if (not -f $savefile) {
+    die "Save file $savefile not found\n";
+}
+
+my $decrypt = "$binpath/FFPRSaveEditor.Decrypt";
+if (not -x $decrypt) {
+    # Try this for Windows?
+    if (-x "$decrypt.exe") {
+        $decrypt = "$decrypt.exe";
+    } else {
+        die "Couldn't find decryptor at $decrypt\n";
+    }
+}
+
+my $filename = "/tmp/ff4savedata.json";
+my $last_mod = 0;
+
+# Load key items from JSON
+my $key_items_map = decode_json do {
+    my $filename = "$binpath/key-items.json";
+    open(my $json_fh, "<", $filename)
+        or die("Can't open \"$filename\": $!\n");
+    local $/;
+    <$json_fh>
+};
+
+# We'll be stateful because async :/
+my %key_items;
+foreach my $key (keys %$key_items_map) {
+    $key_items{$key} = 0;
+}
+
+sub get_json {
+
+    my (undef, $tempfilename) = File::Temp::tempfile("ff4XXXXX", SUFFIX => ".json", OPEN => 0);
+
+    #warn "Executing $decrypt $savefile $tempfilename\n";
+    my @args = ($decrypt, $savefile, $tempfilename);
+    system (@args) == 0
+        or die "decrypt failed: $?";
+
+    my $json_text = do {
+        open(my $json_fh, "<", $tempfilename)
+            or die("Can't open tempfile \"$tempfilename\": $!\n");
+        local $/;
+        <$json_fh>
+    };
+
+    unlink $tempfilename;
+
+    $json_text =~ s/^\xEF\xBB\xBF//;
+    my $json = decode_json $json_text;
+
+    foreach my $key (keys %$json) {
+        $$json{$key} = decode_json ($$json{$key}) if substr($$json{$key},0,1) eq '{';
+    }
+    return $json;
+}
+
+#
+# ============== UATBridge ==============
+my $uatGameInfo = {
+    "cmd" => "GameInfo",
+    "name" => "Falcon Dive",
+    "version" => "0.1",
+    "slots" => []
+};
+
+# UATBridge WebSocket
+my $uatbridge = "ws://localhost:65397";
+warn "Connecting to UATBridge $uatbridge\n";
+my $wsclient = AnyEvent::WebSocket::Client->new;
+my $connection;
+$wsclient->connect($uatbridge)->cb(sub {
+    $connection = eval { shift->recv };
+    if($@) {
+        warn $@;
+        return;
+    }
+    warn "Connected to UATBridge!\n";
+
+    # Handshake connection
+    $connection->on(next_message => sub {
+        my($connection, $message) = @_;
+        warn "Received: ". $message->decoded_body . "\n";
+        my $info = decode_json $message->decoded_body;
+        unless ($$info[0]{cmd} eq "Info") {
+            warn "Bad Info packet\n";
+            $connection->close;
+            return;
+        }
+
+        my $packet = [$uatGameInfo];
+        foreach my $key (keys %key_items) {
+            push @$packet, {
+                "cmd" => "Var",
+                "name" => $key,
+                "value" => $key_items{$key}
+            };
+        };
+        #warn "Sending packet: " . (encode_json $packet) . "\n";
+        $connection->send(
+            encode_json $packet
+        );
+
+    });
+
+});
+
+# ==================== Save Parser ====================
+sub read_save {
+    my $json = get_json();
+    my $dataStorage = $$json{dataStorage};
+
+    # Split the scenario bitfield to a table
+    my @scenarios;
+    foreach (@{$$dataStorage{scenario}}) {
+        for (my $i=32; $i>0; $i--) {
+            push @scenarios, ($_ % 2 ? 1 : 0);
+            $_ /= 2;
+        }
+    }
+
+    my $crystal_shards = 0;
+    my $nothings = 0;
+    foreach my $key (keys %$key_items_map) {
+        $key_items{$key} = $scenarios[$$key_items_map{$key}];
+        $key =~ /^crystal-shard/ and $crystal_shards += $scenarios[$$key_items_map{$key}];
+        $key =~ /^nothing/ and $nothings += $scenarios[$$key_items_map{$key}];
+    }
+    $key_items{"crystal-shards"} = $crystal_shards;
+    $key_items{nothings} = $nothings;
+
+    STDOUT->flush;
+}
+
+# Do an initial read
+read_save();
+
+# Monitor save file for changes
+my $fsmonitor = AnyEvent::Filesys::Notify->new(
+    dirs    => [ (fileparse(abs_path($savefile)))[1] ],
+    filter  => sub { shift eq abs_path($savefile) },
+    cb      => sub {
+        read_save();
+
+        if (defined $connection) {
+            my $packet = [];
+            foreach my $key (keys %key_items) {
+                push @$packet, {
+                    "cmd" => "Var",
+                    "name" => $key,
+                    "value" => $key_items{$key}
+                };
+            };
+            #warn "Sending packet: " . (encode_json $packet) . "\n";
+            $connection->send(
+                encode_json $packet
+            );
+        }
+
+    }
+);
+
+AnyEvent->condvar->recv;

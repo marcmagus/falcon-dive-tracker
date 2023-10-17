@@ -132,7 +132,6 @@
                         {
                             "type": "dock",
                             "dock": "right",
-                            "orientation": "vertical",
                             "h_alignment": "stretch",
                             "v_alignment": "stretch",
                             "content": [

@@ -20,6 +20,10 @@ For PopTracker the packs folder can be under `USER/Documents/PopTracker/packs`, 
 
 For EmoTracker the packs folder can be found under `USER/Documents/EmoTracker/packs`, where `USER` stands for your user directory.
 
+## Sprites
+
+All sprites either extracted from Final Fantasy IV Pixel Remaster by me, or custom sprites made using FFIV-PR sprites as a base.
+
 ## Autotracking
 
-There is no autotracking support at this time. (Hopefully coming soon)
+See [Autotracking.md](Autotracking.md).
