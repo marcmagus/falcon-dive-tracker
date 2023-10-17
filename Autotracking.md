@@ -43,6 +43,8 @@ The Guards in Baron Inn do not have an independent flag in the game as you go im
 
 Similarly, Calcobrena is not tracked independently from Golbez.
 
+The CPU fight will not report as defeated. There is an experimental patch for Falcon Dive at `autotracker/fix-cpu-flag.patch` which you can try. It changes which flag is set in the script after fighting CPU. USE AT YOUR OWN RISK.
+
 ## Support
 
 Feel free to contact me via Discord DM if you are in the Falcon Dive or PopTracker Discords.
