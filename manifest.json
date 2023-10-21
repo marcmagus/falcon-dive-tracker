@@ -1,7 +1,4 @@
-﻿// this the manifest for you pack
-// it contains basic information about your pack
-// for more info on the manifest check: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#manifest
-{
+﻿{
     "name": "Falcon Dive Tracker",
     "game_name": "Falcon Dive",
     "package_version": "1.0.0.0",
@@ -12,17 +9,13 @@
         "standard": {
             "display_name": "Map Tracker",
             "flags": [
-                // "ap" //enables AP autotracking interface - remove if not needed
-                "uat", // use UAT protocol for auto-tracking
-                // "uat-bridge" // auto-start UAT bridge if available -- not implemented
+                "uat", // alternate options are "ap" or "uat-bridge" (uat-bridge is not implemented)
             ]
         },
         "var_itemsonly": {
             "display_name": "Items Only",
             "flags": [
-                // "ap" //enables AP autotracking interface - remove if not needed
-                "uat", // use UAT protocol for auto-tracking
-                // "uat-bridge" // auto-start UAT bridge if available -- not implemented
+                "uat", // alternate options are "ap" or "uat-bridge" (uat-bridge is not implemented)
             ]
         }
     }
