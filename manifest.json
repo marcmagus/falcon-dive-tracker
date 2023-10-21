@@ -9,13 +9,17 @@
         "standard": {
             "display_name": "Map Tracker",
             "flags": [
-                "uat", // alternate options are "ap" or "uat-bridge" (uat-bridge is not implemented)
+                // "ap" //enables AP autotracking interface - remove if not needed
+                "uat", // use UAT protocol for auto-tracking
+                // "uat-bridge" // auto-start UAT bridge if available -- not implemented
             ]
         },
         "var_itemsonly": {
             "display_name": "Items Only",
             "flags": [
-                "uat", // alternate options are "ap" or "uat-bridge" (uat-bridge is not implemented)
+                // "ap" //enables AP autotracking interface - remove if not needed
+                "uat", // use UAT protocol for auto-tracking
+                // "uat-bridge" // auto-start UAT bridge if available -- not implemented
             ]
         }
     }
