@@ -18,7 +18,7 @@ For PopTracker the packs folder can be under `USER/Documents/PopTracker/packs`, 
 
 ### EmoTracker
 
-For EmoTracker the packs folder can be found under `%userprofile%\Documents\EmoTracker\packs`.
+For EmoTracker the packs folder can be found under `%USERPROFILE%\Documents\EmoTracker\packs`.
 
 ## Sprites
 
