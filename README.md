@@ -10,7 +10,7 @@ This package is based on Cyb3RGER's [Template Pack for PopTracker](https://githu
 
 ## Installation
 
-Just download the latest build and put in your packs folder (as a zip or unpacked, both work).
+Just download the latest version from [Releases](https://github.com/marcmagus/falcon-dive-tracker/releases) and put in your packs folder (as a zip or unpacked, both work).
 
 ### PopTracker
 
