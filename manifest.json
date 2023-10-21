@@ -1,7 +1,4 @@
-﻿// this the manifest for you pack
-// it contains basic information about your pack
-// for more info on the manifest check: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#manifest
-{
+﻿{
     "name": "Falcon Dive Tracker",
     "game_name": "Falcon Dive",
     "package_version": "1.0.0.0",
