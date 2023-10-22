@@ -99,7 +99,7 @@
         "name": "Crystal Shards",
         "type": "progressive",
         "allow_disabled": false,
-        "capturable": "true",
+        "capturable": true,
         "codes": "crystal-shards",
         "stages": [
             {
@@ -129,7 +129,7 @@
         "name": "Nothing",
         "type": "progressive",
         "allow_disabled": false,
-        "capturable": "true",
+        "capturable": true,
         "codes": "nothings",
         "stages": [
             {
