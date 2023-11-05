@@ -24,6 +24,25 @@ function updateToggles(store, vars)
     end
 end
 
+-- When these toggles are updated also store the relevant value to the linked toggle
+linkedtoggles = {
+    ["boss-yang"] = "boss-baron-guards",
+    ["boss-golbez"] = "boss-calcobrena",
+}
+function updateLinkedToggles(store, vars)
+    print("updateLinkedToggles")
+    for _, var in ipairs(vars) do
+        local var2 = linkedtoggles[var]
+        local o = Tracker:FindObjectForCode(var2)
+        local val = store:ReadVariable(var)
+        if type(val) == "number" then; o.Active = val > 0
+        elseif type(val) == "string" then; o.Active = val ~= ""
+        else; o.Active = not(not val)
+        end
+        print(var .. " -> " .. var2 .. " = " .. tostring(val) .. " -> " .. tostring(o.Active))
+    end
+end
+
 function updateConsumables(store, vars)
     print("updateConsumables")
     for _, var in ipairs(vars) do
@@ -180,6 +199,7 @@ ScriptHost:AddVariableWatch("toggles", {
     "boss-ogopogo",
 
 }, updateToggles)
+ScriptHost:AddVariableWatch("linkedtoggle", {"boss-yang", "boss-golbez"}, updateLinkedToggles)
 -- ScriptHost:AddVariableWatch("consumables", {"b"}, updateConsumables)
 -- ScriptHost:AddVariableWatch("progressive", {
 --     "crystal-shards",
