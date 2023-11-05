@@ -24,6 +24,25 @@ function updateToggles(store, vars)
     end
 end
 
+-- When these toggles are updated also store the relevant value to the linked toggle
+linkedtoggles = {
+    ["boss-yang"] = "boss-baron-guards",
+    ["boss-golbez"] = "boss-calcobrena",
+}
+function updateLinkedToggles(store, vars)
+    print("updateLinkedToggles")
+    for _, var in ipairs(vars) do
+        local var2 = linkedtoggles[var]
+        local o = Tracker:FindObjectForCode(var2)
+        local val = store:ReadVariable(var)
+        if type(val) == "number" then; o.Active = val > 0
+        elseif type(val) == "string" then; o.Active = val ~= ""
+        else; o.Active = not(not val)
+        end
+        print(var .. " -> " .. var2 .. " = " .. tostring(val) .. " -> " .. tostring(o.Active))
+    end
+end
+
 function updateConsumables(store, vars)
     print("updateConsumables")
     for _, var in ipairs(vars) do
@@ -45,6 +64,43 @@ function updateProgressives(store, vars)
         else; o.CurrentStage = 0
         end
         print(var .. " = " .. tostring(val) .. " -> " .. o.CurrentStage)
+    end
+end
+
+
+-- Table of codes which contribute to a countable progressive
+-- Their stage will be set to the sum of these.
+countables = {
+    ["nothings"] = {"nothing-1","nothing-2","nothing-3","nothing-4","nothing-5","nothing-6","nothing-7","nothing-8","nothing-9"},
+    ["crystal-shards"] = {"crystal-shard-1","crystal-shard-2","crystal-shard-3","crystal-shard-4"},
+}
+
+function updateCountableProgressives(store, vars)
+    print("updateCountableProgressives")
+    for _, var in ipairs(vars) do
+        -- find the item matching this code
+        local countable
+        for k,v in pairs(countables) do
+            for _,i in pairs(countables[k]) do
+                if i == var then
+                    countable = k
+                end
+            end
+        end
+        print("  - " .. tostring(var) .. " is " .. tostring(countable))
+        -- count how many of our items were reported found
+        local count = 0
+        for _,i in ipairs(countables[countable]) do
+            local val = store:ReadVariable(i)
+            if type(val) == "number" then; count = count + val
+            elseif type(val) == "string" then
+                count = count + val ~= "" and 1 or 0
+            else; count = count + not(not val) and 1 or 0
+            end
+        end
+        local o = Tracker:FindObjectForCode(countable)
+        o.CurrentStage = count
+        print(var .. " = " .. tostring(countable) .. " -> " .. o.CurrentStage)
     end
 end
 
@@ -101,19 +157,6 @@ ScriptHost:AddVariableWatch("toggles", {
     -- "trash-can",
     "frying-pan",
     "adamantite",
-    -- "crystal-shard-1",
-    -- "crystal-shard-2",
-    -- "crystal-shard-3",
-    -- "crystal-shard-4",
-    -- "nothing-1",
-    -- "nothing-2",
-    -- "nothing-3",
-    -- "nothing-4",
-    -- "nothing-5",
-    -- "nothing-6",
-    -- "nothing-7",
-    -- "nothing-8",
-    -- "nothing-9"
     "boss-mist-dragon",
     "boss-rydia",
     "boss-baron-soldiers",
@@ -156,9 +199,25 @@ ScriptHost:AddVariableWatch("toggles", {
     "boss-ogopogo",
 
 }, updateToggles)
+ScriptHost:AddVariableWatch("linkedtoggle", {"boss-yang", "boss-golbez"}, updateLinkedToggles)
 -- ScriptHost:AddVariableWatch("consumables", {"b"}, updateConsumables)
-ScriptHost:AddVariableWatch("progressive", {
-    "crystal-shards",
-    "nothings",
-}, updateProgressives)
+-- ScriptHost:AddVariableWatch("progressive", {
+--     "crystal-shards",
+--     "nothings",
+-- }, updateProgressives)
+ScriptHost:AddVariableWatch("countable", {
+    "crystal-shard-1",
+    "crystal-shard-2",
+    "crystal-shard-3",
+    "crystal-shard-4",
+    "nothing-1",
+    "nothing-2",
+    "nothing-3",
+    "nothing-4",
+    "nothing-5",
+    "nothing-6",
+    "nothing-7",
+    "nothing-8",
+    "nothing-9",
+}, updateCountableProgressives)
 --ScriptHost:AddVariableWatch("locations", { }, updateLocations)
