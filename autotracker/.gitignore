@@ -1,7 +1,9 @@
 bin
-lib
+lib/*
+obj
 log
 man
 saves
 src
 FFPRSaveEditor.Decrypt
+.vs
