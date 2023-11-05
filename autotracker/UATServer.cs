@@ -96,6 +96,9 @@ namespace FF4PRAutotracker
             public string slot {get; set; }
         }
 
+        /// <summary>
+        /// UAT <c>Var</c> - sent for each variable after a Sync, or when any variable changed.
+        /// </summary>
         protected class Var 
         {
             public string cmd {get; set; } = "Var";
@@ -103,87 +106,43 @@ namespace FF4PRAutotracker
             public Object value {get;set;} 
         }
 
-
+        /// <summary>
+        /// Send an array containing all variables to the client, used in response to a Sync command.
+        /// </summary>
         protected void Sync()
         {
             List<Var> vars = new List<Var>();
-            int shards = 0;
-            int nothings = 0;
             foreach (var item in scenarios)
             {
-                if (item.Value.StartsWith("crystal-shard"))
-                {
-                    shards += Last.Interpreter.DataStorage.instance.Get(Last.Interpreter.DataStorage.Category.kScenarioFlag1,item.Key);
-                }
-                else if (item.Value.StartsWith("nothing"))
-                {
-                    nothings += Last.Interpreter.DataStorage.instance.Get(Last.Interpreter.DataStorage.Category.kScenarioFlag1,item.Key);
-                }
-                else
-                {
-                    vars.Add(new Var{
-                        name=item.Value,
-                        value=Last.Interpreter.DataStorage.instance.Get(Last.Interpreter.DataStorage.Category.kScenarioFlag1,item.Key)
-                        });
-                }
+                vars.Add(new Var{
+                    name=item.Value,
+                    value=Last.Interpreter.DataStorage.instance.Get(Last.Interpreter.DataStorage.Category.kScenarioFlag1,item.Key)
+                    });
             }
-            vars.Add(new Var{
-                name="crystal-shards",
-                value=shards
-            });
-            vars.Add(new Var{
-                name="nothings",
-                value=nothings
-            });
 
             SendAsync(JsonSerializer.Serialize(vars),null);
-            Plugin.instance.Log.LogInfo($"[{PluginInfo.PLUGIN_NAME}] {JsonSerializer.Serialize(vars)}");
+            /* Plugin.instance.Log.LogDebug($"{JsonSerializer.Serialize(vars)}"); */
         }
 
+        /// <summary>
+        /// Send a single variable to the client.
+        /// </summary>
+        /// <param name="index">Index of ScenarioFlag1 referring to the flag</param>
+        /// <param name="value">New value</param>
         public void SendVar(int index, int value)
         {
-            string name = scenarios[index];
-            Var var;
-            if (name.StartsWith("crystal-shard"))
+            if (UATServer.scenarios.ContainsKey(index))
             {
-                // Count shards
-                int shards = 0;
-                foreach (var item in scenarios)
-                {
-                    if (item.Value.StartsWith("crystal-shard"))
-                    {
-                        shards += Last.Interpreter.DataStorage.instance.Get(Last.Interpreter.DataStorage.Category.kScenarioFlag1,item.Key);
-                    }
-                }
-                var = new Var{
-                    name = "crystal-shards",
-                    value = shards
-                };
-            }
-            else if (name.StartsWith("nothing"))
-            {
-                // Count nothings
-                int shards = 0;
-                foreach (var item in scenarios)
-                {
-                    if (item.Value.StartsWith("nothing"))
-                    {
-                        shards += Last.Interpreter.DataStorage.instance.Get(Last.Interpreter.DataStorage.Category.kScenarioFlag1,item.Key);
-                    }
-                }
-                var = new Var{
-                    name = "nothings",
-                    value = shards,
-                };
+                SendAsync(JsonSerializer.Serialize(new[] {
+                    new Var {
+                        name = scenarios[index],
+                        value = value,
+                    }}), null);
             }
             else
             {
-                var = new Var {
-                    name = name,
-                    value = value,
-                };
+                Plugin.instance.Log.LogError($"Attempted to send unknown variable {index}");
             }
-            SendAsync(JsonSerializer.Serialize(new[] {var}), null);
         }
 
        protected override void OnMessage (MessageEventArgs e)
@@ -198,7 +157,7 @@ namespace FF4PRAutotracker
                 else 
                 {
                     // ErrorReply
-                    Plugin.instance.Log.LogError($"[{PluginInfo.PLUGIN_NAME}] UAT Bad Command: {command.cmd}");
+                    Plugin.instance.Log.LogError($"UAT Bad Command: {command.cmd}");
                     SendAsync(JsonSerializer.Serialize(new [] {
                         new 
                         {
@@ -215,7 +174,7 @@ namespace FF4PRAutotracker
         {
             base.OnOpen();
             instance=this;
-            Plugin.instance.Log.LogInfo($"[{PluginInfo.PLUGIN_NAME}] UAT Connection received.");
+            Plugin.instance.Log.LogInfo($"UAT Connection received.");
             SendAsync(JsonSerializer.Serialize(new [] {
                 new
                 {
@@ -228,7 +187,4 @@ namespace FF4PRAutotracker
         }
 
     }
-
-
-
 }

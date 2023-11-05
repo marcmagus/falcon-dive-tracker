@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <AssemblyName>FF4PRAutotracker</AssemblyName>
+    <AssemblyName>FF4FalconDive.Autotracker.PopTracker</AssemblyName>
+    <Product>Falcon Dive Autotracker for PopTracker</Product>
     <Description>My first plugin</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>

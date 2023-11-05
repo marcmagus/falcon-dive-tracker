@@ -25,6 +25,7 @@ namespace FF4PRAutotracker
                         UATServer.instance.SendVar(index,value);
                     }
                 }
+                /*
                 StringBuilder sb = new StringBuilder();
                 sb.Append("Set(");
                 sb.Append(" 'category': ").Append(category.ToString());
@@ -32,6 +33,7 @@ namespace FF4PRAutotracker
                 sb.Append(" 'value': ").Append(value.ToString());
                 sb.Append(" )");
                 Plugin.instance.Log.LogDebug(sb.ToString());
+                */
             }
             catch (System.Exception ex)
             {

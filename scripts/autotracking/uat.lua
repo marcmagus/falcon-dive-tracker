@@ -48,6 +48,43 @@ function updateProgressives(store, vars)
     end
 end
 
+
+-- Table of codes which contribute to a countable progressive
+-- Their stage will be set to the sum of these.
+countables = {
+    ["nothings"] = {"nothing-1","nothing-2","nothing-3","nothing-4","nothing-5","nothing-6","nothing-7","nothing-8","nothing-9"},
+    ["crystal-shards"] = {"crystal-shard-1","crystal-shard-2","crystal-shard-3","crystal-shard-4"},
+}
+
+function updateCountableProgressives(store, vars)
+    print("updateCountableProgressives")
+    for _, var in ipairs(vars) do
+        -- find the item matching this code
+        local countable
+        for k,v in pairs(countables) do
+            for _,i in pairs(countables[k]) do
+                if i == var then
+                    countable = k
+                end
+            end
+        end
+        print("  - " .. tostring(var) .. " is " .. tostring(countable))
+        -- count how many of our items were reported found
+        local count = 0
+        for _,i in ipairs(countables[countable]) do
+            local val = store:ReadVariable(i)
+            if type(val) == "number" then; count = count + val
+            elseif type(val) == "string" then
+                count = count + val ~= "" and 1 or 0
+            else; count = count + not(not val) and 1 or 0
+            end
+        end
+        local o = Tracker:FindObjectForCode(countable)
+        o.CurrentStage = count
+        print(var .. " = " .. tostring(countable) .. " -> " .. o.CurrentStage)
+    end
+end
+
 function updateProgressiveToggles(store, vars)
     print("updateProgressiveToggles")
     for _, var in ipairs(vars) do
@@ -101,19 +138,6 @@ ScriptHost:AddVariableWatch("toggles", {
     -- "trash-can",
     "frying-pan",
     "adamantite",
-    -- "crystal-shard-1",
-    -- "crystal-shard-2",
-    -- "crystal-shard-3",
-    -- "crystal-shard-4",
-    -- "nothing-1",
-    -- "nothing-2",
-    -- "nothing-3",
-    -- "nothing-4",
-    -- "nothing-5",
-    -- "nothing-6",
-    -- "nothing-7",
-    -- "nothing-8",
-    -- "nothing-9"
     "boss-mist-dragon",
     "boss-rydia",
     "boss-baron-soldiers",
@@ -157,8 +181,23 @@ ScriptHost:AddVariableWatch("toggles", {
 
 }, updateToggles)
 -- ScriptHost:AddVariableWatch("consumables", {"b"}, updateConsumables)
-ScriptHost:AddVariableWatch("progressive", {
-    "crystal-shards",
-    "nothings",
-}, updateProgressives)
+-- ScriptHost:AddVariableWatch("progressive", {
+--     "crystal-shards",
+--     "nothings",
+-- }, updateProgressives)
+ScriptHost:AddVariableWatch("countable", {
+    "crystal-shard-1",
+    "crystal-shard-2",
+    "crystal-shard-3",
+    "crystal-shard-4",
+    "nothing-1",
+    "nothing-2",
+    "nothing-3",
+    "nothing-4",
+    "nothing-5",
+    "nothing-6",
+    "nothing-7",
+    "nothing-8",
+    "nothing-9",
+}, updateCountableProgressives)
 --ScriptHost:AddVariableWatch("locations", { }, updateLocations)

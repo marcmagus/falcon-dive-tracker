@@ -22,7 +22,7 @@ namespace FF4PRAutotracker
             instance = this;
             // Plugin startup logic
             Log.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
-            Log.LogInfo($"[{PluginInfo.PLUGIN_NAME}] Calling Harmony patcher...");
+            Log.LogInfo($"Calling Harmony patcher...");
             var harmony = new Harmony(PluginInfo.PLUGIN_GUID);
             Assembly assembly = Assembly.GetExecutingAssembly();
             foreach (var type in AccessTools.GetTypesFromAssembly(assembly))
@@ -31,7 +31,7 @@ namespace FF4PRAutotracker
                 if (processor.Patch()?.Count > 0)
                     Log.LogInfo($"[Harmony] {type.Name} successfully applied.");
             }
-            Log.LogInfo($"[{PluginInfo.PLUGIN_NAME}] ...finished patching.");
+            Log.LogInfo($"...finished patching.");
 
             // Starting up WebSocket Server
             wss = new WebSocketServer("ws://localhost:65399")
