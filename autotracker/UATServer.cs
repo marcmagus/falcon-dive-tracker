@@ -109,8 +109,9 @@ namespace FF4PRAutotracker
         /// <summary>
         /// Send an array containing all variables to the client, used in response to a Sync command.
         /// </summary>
-        protected void Sync()
+        public void Sync()
         {
+            Plugin.instance.Log.LogInfo("Sync");
             List<Var> vars = new List<Var>();
             foreach (var item in scenarios)
             {

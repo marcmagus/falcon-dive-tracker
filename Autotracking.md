@@ -18,8 +18,8 @@ Similarly, Calcobrena is not tracked independently from Golbez.
 
 The CPU fight will not report as defeated. There is an experimental patch for Falcon Dive at `autotracker/fix-cpu-flag.patch` which you can try. It changes which flag is set in the script after fighting CPU. USE AT YOUR OWN RISK.
 
-The autotracker does not currently synchronize correctly when loading a save. You can click the Reload Pack (cycling arrows) button to force a resync.
-
 ## Support
+
+If you have trouble you might get some helpful information from `path/to/FINAL FANTASY IV PR/BepInEx/LogOutput.log` or by running PopTracker in a console so you can see its console output.
 
 Feel free to contact me via Discord DM if you are in the Falcon Dive or PopTracker Discords.
