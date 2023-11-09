@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.0.0",
+            "download_url": "https://github.com/marcmagus/falcon-dive-tracker/releases/download/v1.0.0/FF4FalconDiveTracker-v1.0.0.zip",
+            "sha256": "95697c6722be962c7550b3241e77ad77d304ec2b210f10529d3b84a8cdc0e7f3",
+            "changelog": [
+                "Autotracking over UAT via Plugin - download plugin at https://github.com/marcmagus/falcon-dive-tracker/releases/tag/v1.0.0"
+                ]
+        },
+        {
             "package_version": "0.1.0",
             "download_url": "https://github.com/marcmagus/falcon-dive-tracker/archive/refs/tags/v0.1.zip",
             "sha256": "5232655757c8a62cb6ed5cc6998ba4fd04dd24ecc597b6e3b3a12ece413c2aab",
