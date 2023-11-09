@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "package_version": "0.1.0",
+            "download_url": "https://github.com/marcmagus/falcon-dive-tracker/archive/refs/tags/v0.1.zip",
+            "sha256": "5232655757c8a62cb6ed5cc6998ba4fd04dd24ecc597b6e3b3a12ece413c2aab",
+            "changelog": [
+                "Initial working version. No autotracking."
+                ]
+        }
+    ]
+}

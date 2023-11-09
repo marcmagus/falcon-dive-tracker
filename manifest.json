@@ -1,9 +1,9 @@
 ﻿{
     "name": "Falcon Dive Tracker",
     "game_name": "Falcon Dive",
-    "package_version": "1.0.0.0",
+    "package_version": "1.0.0",
     "package_uid": "falcon-dive",
-    "platform": "windows",
+    "platform": "PC",
     "author": "marcmagus",
     "variants": {
         "standard": {
@@ -11,7 +11,6 @@
             "flags": [
                 // "ap" //enables AP autotracking interface - remove if not needed
                 "uat", // use UAT protocol for auto-tracking
-                // "uat-bridge" // auto-start UAT bridge if available -- not implemented
             ]
         },
         "var_itemsonly": {
@@ -19,8 +18,8 @@
             "flags": [
                 // "ap" //enables AP autotracking interface - remove if not needed
                 "uat", // use UAT protocol for auto-tracking
-                // "uat-bridge" // auto-start UAT bridge if available -- not implemented
             ]
         }
-    }
+    },
+    "versions_url": "https://raw.githubusercontent.com/marcmagus/falcon-dive-tracker/main/versions.json"
 }
