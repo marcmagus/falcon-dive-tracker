@@ -3,6 +3,7 @@
         "name": "Default",
         "chest_unopened_img": "images/ff4pr-chest-closed.png",
         "chest_opened_img": "images/ff4pr-chest-opened.png",
+        "overlay_background": "#000000",
         "children": [
             {
                 "name": "Mist Cave",
@@ -27,7 +28,7 @@
                 ]
             },
             {
-                "name": "Mist Town",
+                "name": "Mist",
                 "access_rules": [
                     "bomb-ring"
                 ],

@@ -25,11 +25,13 @@ namespace FF4PRAutotracker
                         UATServer.instance.SendScenario(index,value);
                     }
                 }
-                else if (category == Last.Interpreter.DataStorage.Category.kTreasureFlag1)
+                else if (Last.Interpreter.DataStorage.Category.kTreasureFlag1 <= category && 
+                         category <= Last.Interpreter.DataStorage.Category.kTreasureFlag4)
                 {
+                    index += (category - Last.Interpreter.DataStorage.Category.kTreasureFlag1) * 256; // Byte-limited flag indices
                     if ((Treasures.Flags.ContainsKey(index)) && (UATServer.instance != null))
                     {
-                        Plugin.instance.Log.LogInfo($"Opened {Treasures.Flags[index]}");
+                        Plugin.instance.Log.LogInfo($"Opened [{index}] {Treasures.Flags[index]}");
                         UATServer.instance.SendTreasure(index);
                     }
                 }

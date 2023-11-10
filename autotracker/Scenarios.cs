@@ -80,6 +80,9 @@ namespace FF4PRAutotracker
             [327] = "nothing-7",
             [328] = "nothing-8",
             [329] = "nothing-9",
+            [74] = "Kokkol's Smithy/Forge Excalibur [9]",
+            [392] = "Agart/Nothing Vending Machine [9]",
+            [106] = "Adamant Grotto/Pink Tail [9]",
         };      
 
         public static Dictionary<string,int> counts = new();

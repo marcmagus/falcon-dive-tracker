@@ -223,8 +223,8 @@ ScriptHost:AddVariableWatch("countable", {
 ScriptHost:AddVariableWatch("locations", {
     "Mist Cave/Mist Dragon",
     "Mist Cave/Mist Cave [2-5]",
-    "Mist Town/Rydia",
-    "Mist Town/Mist [2-6]",
+    "Mist/Rydia",
+    "Mist/Mist [2-6]",
     "Kaipo/Kaipo Inn",
     "Kaipo/Kaipo Sand Ruby",
     "Kaipo/Kaipo, Oasis of the Desert [1-4]",
