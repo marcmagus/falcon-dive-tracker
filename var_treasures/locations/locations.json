@@ -1,0 +1,1064 @@
+[
+    {
+        "name": "Default",
+        "chest_unopened_img": "images/ff4pr-chest-closed.png",
+        "chest_opened_img": "images/ff4pr-chest-opened.png",
+        "children": [
+            {
+                "name": "Mist Cave",
+                "sections": [
+                    {
+                        "hosted_item": "boss-mist-dragon",
+                        "name": "Mist Dragon"
+                    },
+                    {
+                        "name": "Mist Cave [2-5]",
+                        "item_count": 4,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 280,
+                        "y": 332
+                    }
+                ]
+            },
+            {
+                "name": "Mist Town",
+                "access_rules": [
+                    "bomb-ring"
+                ],
+                "sections": [
+                    {
+                        "hosted_item": "boss-rydia",
+                        "name": "Rydia"
+                    },
+                    {
+                        "name": "Mist [2-6]",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 315,
+                        "y": 332
+                    }
+                ]
+            },
+            {
+                "name": "Kaipo",
+                "sections": [
+                    {
+                        "hosted_item": "boss-baron-soldiers",
+                        "name": "Kaipo Inn",
+                        "access_rules": [
+                            "kaipo-pass"
+                        ],
+                    },
+                    {
+                        "hosted_item": "boss-waterhag",
+                        "name": "Kaipo Sand Ruby",
+                        "access_rules": [
+                            "sand-ruby"
+                        ]
+                    },
+                    {
+                        "name": "Kaipo, Oasis of the Desert [1-4]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 407,
+                        "y": 285
+                    }
+                ]
+            },
+            {
+                "name": "Underground Waterway",
+                "sections": [
+                    {
+                        "name": "Underground Waterway [2-5]",
+                        "item_count": 15,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Hidden Chamber [3-6]",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 436,
+                        "y": 186
+                    }
+                ]
+            },
+            {
+                "name": "Subterranean Lake",
+                "sections": [
+                    {
+                        "hosted_item": "boss-octomamm",
+                        "name": "Octomammoth"
+                    },
+                    {
+                        "name": "Subterranean Lake [3-6]",
+                        "item_count": 4,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 407,
+                        "y": 167
+                    }
+                ]
+            },
+            {
+                "name": "Damcyan Castle",
+                "sections": [
+                    {
+                        "hosted_item": "boss-edward",
+                        "name": "Edward"
+                    },
+                    {
+                        "name": "Damcyan Castle [1-4]",
+                        "item_count": 13,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 388,
+                        "y": 142
+                    }
+                ]
+            },
+            {
+                "name": "Antlion Cave",
+                "sections": [
+                    {
+                        "hosted_item": "boss-antlion",
+                        "name": "Antlion"
+                    },
+                    {
+                        "name": "Antlion Cave [2-5]",
+                        "item_count": 9,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Antlion Cave [3-6]",
+                        "item_count": 4,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 442,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Mt. Hobs",
+                "sections": [
+                    {
+                        "hosted_item": "boss-mombomb",
+                        "name": "Mom Bomb"
+                    },
+                    {
+                        "name": "Mt. Hobs [3-6]",
+                        "item_count": 5,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 518,
+                        "y": 114
+                    }
+                ]
+            },
+            {
+                "name": "Fabul Castle",
+                "sections": [
+                    {
+                        "hosted_item": "boss-fabul-gauntlet",
+                        "name": "Fabul Gauntlet"
+                    },
+                    {
+                        "name": "Fabul Castle [1-4]",
+                        "item_count": 4,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Fabul Castle [2-5]",
+                        "item_count": 6,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 689,
+                        "y": 142
+                    }
+                ]
+            },
+            {
+                "name": "Mythril",
+                "sections": [
+                    {
+                        "name": "Mythril [2-5]",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 673,
+                        "y": 367
+                    }
+                ]
+            },
+            {
+                "name": "Mt. Ordeals",
+                "sections": [
+                    {
+                        "hosted_item": "boss-scarmiglione",
+                        "name": "Scarmiglione - no reward"
+                    },
+                    {
+                        "hosted_item": "boss-scarmiglione-z",
+                        "name": "Scarmiglione Z - no reward"
+                    },
+                    {
+                        "hosted_item": "boss-dkcecil",
+                        "name": "Dark Knight Cecil"
+                    },
+                    {
+                        "name": "Mt. Ordeals [3-5]",
+                        "item_count": 4,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 698,
+                        "y": 582
+                    }
+                ]
+            },
+            {
+                "name": "Town of Baron",
+                "sections": [
+                    {
+                        "hosted_item": "boss-baron-guards",
+                        "name": "Guards - no reward"
+                    },
+                    {
+                        "hosted_item": "boss-yang",
+                        "name": "Yang"
+                    },
+                    {
+                        "name": "Town of Baron [1-4]",
+                        "item_count": 11,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Town of Baron [3-6]",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "baron-key,treasure",
+                            "{baron-key}"
+                        ],
+                    },
+                    {
+                        "name": "Old Waterway [3-6]",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "baron-key,treasure",
+                            "{baron-key}"
+                        ],
+                    },
+                    {
+                        "name": "Old Waterway [4-7]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "baron-key,treasure",
+                            "{baron-key}"
+                        ],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 344,
+                        "y": 462
+                    }
+                ]
+            },
+            {
+                "name": "Castle Baron",
+                "access_rules": [
+                    "baron-key"
+                ],
+                "sections": [
+                    {
+                        "hosted_item": "boss-baigan",
+                        "name": "Baigan - no reward"
+                    },
+                    {
+                        "hosted_item": "boss-cagnazzo",
+                        "name": "Cagnazzo"
+                    },
+                    {
+                        "hosted_item": "boss-odin",
+                        "name": "Odin"
+                    },
+                    {
+                        "name": "Castle Baron [3-6]",
+                        "item_count": 20,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 325,
+                        "y": 443
+                    }
+                ]
+            },
+            {
+                "name": "Magnetic Cavern",
+                "access_rules": [
+                    "twin-harp"
+                ],
+                "sections": [
+                    {
+                        "hosted_item": "boss-dark-elf",
+                        "name": "Dark Elf"
+                    },
+                    {
+                        "name": "Magnetic Cavern [3-6]",
+                        "item_count": 10,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 249,
+                        "y": 127
+                    }
+                ]
+            },
+            {
+                "name": "Troia",
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 124,
+                        "y": 215
+                    }
+                ],
+                "sections": [
+                    {
+                        "hosted_item": "boss-magus-sisters",
+                        "name": "Magus Sisters - no reward",
+                        "access_rules": [
+                            "earth-crystal"
+                        ],
+                    },
+                    {
+                        "hosted_item": "boss-barbariccia",
+                        "name": "Barbariccia",
+                        "access_rules": [
+                            "earth-crystal"
+                        ],
+                    },
+                    {
+                        "name": "Tower of Zot [3-6]",
+                        "item_count": 5,
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "earth-crystal,treasure",
+                            "{earth-crystal}"
+                        ],
+                    },
+                    {
+                        "name": "Tower of Zot Monster [4-7]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "earth-crystal,treasure",
+                            "{earth-crystal}"
+                        ],
+                    },
+                    {
+                        "name": "Town of Troia [2-5]",
+                        "item_count": 4,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Troia Castle [2-6]",
+                        "item_count": 9,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Troia Castle - Treasury [4-8]",
+                        "item_count": 18,
+                        "clear_as_group": false,
+                        "access_rules": [ "earth-crystal,treasure", "{earth-crystal}" ]
+                    },
+                ],
+            },
+            {
+                "name": "Adamant Grotto",
+                "access_rules": [
+                    "hovercraft"
+                ],
+                "sections": [
+                    {
+                        "hosted_item": "boss-rat-tail",
+                        "name": "Rat Tail",
+                        "access_rules": [ "rat-tail" ],
+                    },
+                    {
+                        "name": "Pink Tail [9]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "pink-tail,treasure", "{pink-tail}" ],
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 702,
+                        "y": 386
+                    }
+                ]
+            },
+            {
+                "name": "Agart",
+                "sections": [
+                    {
+                        "hosted_item": "boss-nothing-machine",
+                        "name": "Nothing Vending Machine",
+                        "access_rules": [ "nothing_3" ],
+                    },
+                    {
+                        "name": "Nothing Vending Machine [9]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "nothing_5,treasure", "{nothing_5}" ]
+                    },
+                    {
+                        "name": "Agart [2-5]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 343,
+                        "y": 635
+                    }
+                ]
+            },
+            {
+                "name": "Eblan Castle",
+                "sections": [
+                    {
+                        "name": "Eblan Castle [2-5]",
+                        "item_count": 18,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Eblan Castle Monster [3-6]",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 160,
+                        "y": 697
+                    }
+                ]
+            },
+            {
+                "name": "Underground",
+                "access_rules": [
+                    "magma-rock",
+                    "hovercraft"
+                ],
+                "children": [
+                    {
+                        "name": "Dwarven Castle",
+                        "sections": [
+                            {
+                                "hosted_item": "boss-calcobrena",
+                                "name": "Calcobrena - no reward"
+                            },
+                            {
+                                "hosted_item": "boss-golbez",
+                                "name": "Golbez"
+                            },
+                            {
+                                "name": "Dwarven Castle [3-6]",
+                                "item_count": 4,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Dwarven Castle [4-7]",
+                                "item_count": 14,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                                },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "underground",
+                                "x": 611,
+                                "y": 488
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Tomra",
+                        "sections": [
+                            {
+                                "name": "Tomra [4-6]",
+                                "item_count": 6,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                                },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "underground",
+                                "x": 403,
+                                "y": 708
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Kokkol's Smithy",
+                        "sections": [
+                            {
+                                "name": "Forge Excalibur [9]",
+                                "item_count": 1,
+                                "clear_as_group": false,
+                                "access_rules": [
+                                    "legend-sword,adamantite,treasure",
+                                    "{legend-sword,adamantite}",
+                                ]
+                            },
+                            {
+                                "name": "Kokkol's Smithy [4-6]",
+                                "item_count": 2,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "underground",
+                                "x": 635,
+                                "y": 719
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lower Babel",
+                        "sections": [
+                            {
+                                "hosted_item": "boss-lugae",
+                                "name": "Dr. Lugae"
+                            },
+                            {
+                                "hosted_item": "boss-dark-imps",
+                                "name": "Dark Imps",
+                                "access_rules": [
+                                    "lugae-key"
+                                ],
+                            },
+                            {
+                                "name": "Tower of Babel [4-7]",
+                                "item_count": 15,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Tower of Babel Monster [5-8]",
+                                "item_count": 4,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "underground",
+                                "x": 329,
+                                "y": 98
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cave of Summons",
+                        "sections": [
+                            {
+                                "hosted_item": "boss-asura",
+                                "name": "Asura"
+                            },
+                            {
+                                "hosted_item": "boss-leviathan",
+                                "name": "Leviathan"
+                            },
+                            {
+                                "name": "Cave of Summons [4-7]",
+                                "item_count": 11,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Cave of Summons Monster [5-8]",
+                                "item_count": 1,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Land of Summons [4-6]",
+                                "item_count": 7,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Land of Summons - Hidden Chamber [5-7]",
+                                "item_count": 4,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "underground",
+                                "x": 208,
+                                "y": 514
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sealed Cavern",
+                        "access_rules": [
+                            "lucas-necklace"
+                        ],
+                        "sections": [
+                            {
+                                "hosted_item": "boss-demon-wall",
+                                "name": "Demon Wall"
+                            },
+                            {
+                                "name": "Sealed Cavern [5-8]",
+                                "item_count": 19,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "underground",
+                                "x": 314,
+                                "y": 642
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sylvan Cave",
+                        "access_rules": [
+                            "frying-pan"
+                        ],
+                        "sections": [
+                            {
+                                "hosted_item": "boss-sylvan-cave",
+                                "name": "Sylphs"
+                            },
+                            {
+                                "name": "Sylvan Cave [4-7]",
+                                "item_count": 25,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Sylvan Cave Monster [5-8]",
+                                "item_count": 1,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Sylvan Cave Hidden Chamber [6-9]",
+                                "item_count": 6,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "underground",
+                                "x": 130,
+                                "y": 115
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Upper Babel",
+                "access_rules": [
+                    "hovercraft"
+                ],
+                "sections": [
+                    {
+                        "hosted_item": "boss-king-queen-eblan",
+                        "name": "King and Queen Eblan - no reward"
+                    },
+                    {
+                        "hosted_item": "boss-rubicante",
+                        "name": "Rubicante - no reward"
+                    },
+                    {
+                        "name": "Eblan Settlement [3-6]",
+                        "item_count": 2,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Cave of Eblan [4-6]",
+                        "item_count": 19,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Cave of Eblan Monster [6-8]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Upper Babel [4-7]",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Upper Babel [4-7]",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Upper Babel Monster [6-9]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 96,
+                        "y": 680
+                    }
+                ]
+            },
+            {
+                "name": "Moon",
+                "access_rules": [
+                    "dark-crystal"
+                ],
+                "children": [
+                    {
+                        "name": "Cave of Bahamut",
+                        "sections": [
+                            {
+                                "hosted_item": "boss-bahamut",
+                                "name": "Bahamut"
+                            },
+                            {
+                                "name": "Cave of Bahamut [6-8]",
+                                "item_count": 4,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "moon",
+                                "x": 693,
+                                "y": 445
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Western Lunar Path",
+                        "sections": [
+                            {
+                                "name": "Western Lunar Path [6-8]",
+                                "item_count": 2,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Western Lunar Path Monster [7-9]",
+                                "item_count": 1,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "moon",
+                                "x": 156,
+                                "y": 372
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Giant of Babel",
+                        "sections": [
+                            {
+                                "hosted_item": "boss-elements",
+                                "name": "Elemental Lords"
+                            },
+                            {
+                                "hosted_item": "boss-cpu",
+                                "name": "CPU"
+                            },
+                            {
+                                "name": "Giant of Babel [5-8]",
+                                "item_count": 7,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Giant of Babel Monster [6-9]",
+                                "item_count": 1,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "overworld",
+                                "x": 134,
+                                "y": 684
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lunar Subterranae",
+                        "sections": [
+                            {
+                                "hosted_item": "boss-white-dragon",
+                                "name": "Murasame Altar"
+                            },
+                            {
+                                "hosted_item": "boss-dark-bahamut",
+                                "name": "Crystal Sword Altar"
+                            },
+                            {
+                                "hosted_item": "boss-plague",
+                                "name": "White Spear Room"
+                            },
+                            {
+                                "hosted_item": "boss-lunasaur",
+                                "name": "Ribbon Room"
+                            },
+                            {
+                                "hosted_item": "boss-ogopogo",
+                                "name": "Masamune Altar"
+                            },
+                            {
+                                "name": "Lunar Subterrane [6-8]",
+                                "item_count": 19,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Lunar Subterrane Monster [7-9]",
+                                "item_count": 9,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
+                                "name": "Lunar Core [7-9]",
+                                "item_count": 4,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "moon",
+                                "x": 282,
+                                "y": 468
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Chocobo Forest - Baron Area",
+                "sections": [
+                    {
+                        "name": "Chocobo Forest - Baron Area [2-4]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 295,
+                        "y": 470
+                    }
+                ]
+            },
+            {
+                "name": "Chocobo Forest - Fabul Area",
+                "sections": [
+                    {
+                        "name": "Chocobo Forest - Fabul Area [3-5]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 730,
+                        "y": 107
+                    }
+                ]
+            },
+            {
+                "name": "Chocobo Forest - Mysidia Area",
+                "sections": [
+                    {
+                        "name": "Chocobo Forest - Mysidia Area [2-4]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 682,
+                        "y": 614
+                    }
+                ]
+            },
+            {
+                "name": "Chocobo Forest - Troia Area",
+                "sections": [
+                    {
+                        "name": "Chocobo Forest - Troia Area [4-6]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 124,
+                        "y": 277
+                    }
+                ]
+            },
+            {
+                "name": "Chocobo Forest - Southern Island",
+                "sections": [
+                    {
+                        "name": "Chocobo Forest - Southern Island [4-6]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 288,
+                        "y": 205
+                    }
+                ]
+            },
+            {
+                "name": "Chocobo Village",
+                "sections": [
+                    {
+                        "name": "Chocobo Village [3-6]",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "access_rules": [ "treasure", "{}" ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 143,
+                        "y": 126
+                    }
+                ]
+            },
+        ]
+    }
+]
