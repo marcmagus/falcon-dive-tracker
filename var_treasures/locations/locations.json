@@ -443,7 +443,7 @@
                         "access_rules": [ "treasure", "{}" ]
                     },
                     {
-                        "name": "Troia Castle - Treasury [4-8]",
+                        "name": "Troia Castle - Treasury [5-9]",
                         "item_count": 18,
                         "clear_as_group": false,
                         "access_rules": [ "earth-crystal,treasure", "{earth-crystal}" ]
@@ -740,7 +740,7 @@
                                 "access_rules": [ "treasure", "{}" ]
                             },
                             {
-                                "name": "Sylvan Cave Hidden Chamber [6-9]",
+                                "name": "Hidden Chamber [6-9]",
                                 "item_count": 6,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
@@ -785,12 +785,6 @@
                     {
                         "name": "Cave of Eblan Monster [6-8]",
                         "item_count": 1,
-                        "clear_as_group": false,
-                        "access_rules": [ "treasure", "{}" ]
-                    },
-                    {
-                        "name": "Upper Babel [4-7]",
-                        "item_count": 7,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
                     },
