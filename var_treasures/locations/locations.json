@@ -414,24 +414,6 @@
                         ],
                     },
                     {
-                        "name": "Tower of Zot [3-6]",
-                        "item_count": 5,
-                        "clear_as_group": false,
-                        "access_rules": [
-                            "earth-crystal,treasure",
-                            "{earth-crystal}"
-                        ],
-                    },
-                    {
-                        "name": "Tower of Zot Monster [4-7]",
-                        "item_count": 1,
-                        "clear_as_group": false,
-                        "access_rules": [
-                            "earth-crystal,treasure",
-                            "{earth-crystal}"
-                        ],
-                    },
-                    {
                         "name": "Town of Troia [2-5]",
                         "item_count": 4,
                         "clear_as_group": false,
@@ -448,6 +430,24 @@
                         "item_count": 18,
                         "clear_as_group": false,
                         "access_rules": [ "earth-crystal,treasure", "{earth-crystal}" ]
+                    },
+                    {
+                        "name": "Tower of Zot [3-6]",
+                        "item_count": 5,
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "earth-crystal,treasure",
+                            "{earth-crystal}"
+                        ],
+                    },
+                    {
+                        "name": "Tower of Zot Monster [4-7]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "earth-crystal,treasure",
+                            "{earth-crystal}"
+                        ],
                     },
                 ],
             },
@@ -486,16 +486,16 @@
                         "access_rules": [ "nothing_3" ],
                     },
                     {
-                        "name": "Nothing Vending Machine [9]",
-                        "item_count": 1,
-                        "clear_as_group": false,
-                        "access_rules": [ "nothing_5,treasure", "{nothing_5}" ]
-                    },
-                    {
                         "name": "Agart [2-5]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
+                    },
+                    {
+                        "name": "Nothing Vending Machine [9]",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "access_rules": [ "nothing_5,treasure", "{nothing_5}" ]
                     },
                 ],
                 "map_locations": [
@@ -591,6 +591,12 @@
                         "name": "Kokkol's Smithy",
                         "sections": [
                             {
+                                "name": "Kokkol's Smithy [4-6]",
+                                "item_count": 2,
+                                "clear_as_group": false,
+                                "access_rules": [ "treasure", "{}" ]
+                            },
+                            {
                                 "name": "Forge Excalibur [9]",
                                 "item_count": 1,
                                 "clear_as_group": false,
@@ -598,12 +604,6 @@
                                     "legend-sword,adamantite,treasure",
                                     "{legend-sword,adamantite}",
                                 ]
-                            },
-                            {
-                                "name": "Kokkol's Smithy [4-6]",
-                                "item_count": 2,
-                                "clear_as_group": false,
-                                "access_rules": [ "treasure", "{}" ]
                             },
                         ],
                         "map_locations": [
