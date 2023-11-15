@@ -630,7 +630,7 @@
                             },
                             {
                                 "name": "Tower of Babel [4-7]",
-                                "item_count": 15,
+                                "item_count": 11,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
                             },
@@ -662,7 +662,7 @@
                             },
                             {
                                 "name": "Cave of Summons [4-7]",
-                                "item_count": 11,
+                                "item_count": 10,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
                             },
@@ -790,13 +790,13 @@
                         "access_rules": [ "treasure", "{}" ]
                     },
                     {
-                        "name": "Upper Babel [4-7]",
-                        "item_count": 7,
+                        "name": "Tower of Babel [4-7]",
+                        "item_count": 8,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
                     },
                     {
-                        "name": "Upper Babel Monster [6-9]",
+                        "name": "Tower of Babel Monster [6-9]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
@@ -895,7 +895,7 @@
                         ]
                     },
                     {
-                        "name": "Lunar Subterranae",
+                        "name": "Lunar Subterrane",
                         "sections": [
                             {
                                 "hosted_item": "boss-white-dragon",
@@ -930,7 +930,7 @@
                                 "access_rules": [ "treasure", "{}" ]
                             },
                             {
-                                "name": "Lunar Core [7-9]",
+                                "name": "Lunar Subterrane - Core [7-9]",
                                 "item_count": 4,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
@@ -947,10 +947,10 @@
                 ]
             },
             {
-                "name": "Chocobo Forest - Baron Area",
+                "name": "Chocobo Forest, Baron Area",
                 "sections": [
                     {
-                        "name": "Chocobo Forest - Baron Area [2-4]",
+                        "name": "Chocobo Forest, Baron Area [2-4]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
@@ -965,10 +965,10 @@
                 ]
             },
             {
-                "name": "Chocobo Forest - Fabul Area",
+                "name": "Chocobo Forest, Fabul Area",
                 "sections": [
                     {
-                        "name": "Chocobo Forest - Fabul Area [3-5]",
+                        "name": "Chocobo Forest, Fabul Area [3-5]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
@@ -983,10 +983,10 @@
                 ]
             },
             {
-                "name": "Chocobo Forest - Mysidia Area",
+                "name": "Chocobo Forest, Mysidia Area",
                 "sections": [
                     {
-                        "name": "Chocobo Forest - Mysidia Area [2-4]",
+                        "name": "Chocobo Forest, Mysidia Area [2-4]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
@@ -1001,10 +1001,10 @@
                 ]
             },
             {
-                "name": "Chocobo Forest - Troia Area",
+                "name": "Chocobo Forest, Troia Area",
                 "sections": [
                     {
-                        "name": "Chocobo Forest - Troia Area [4-6]",
+                        "name": "Chocobo Forest, Troia Area [4-6]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
@@ -1019,10 +1019,10 @@
                 ]
             },
             {
-                "name": "Chocobo Forest - Southern Island",
+                "name": "Chocobo Forest, Southern Island",
                 "sections": [
                     {
-                        "name": "Chocobo Forest - Southern Island [4-6]",
+                        "name": "Chocobo Forest, Southern Island [4-6]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
