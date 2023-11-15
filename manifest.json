@@ -26,6 +26,13 @@
                 // "ap" //enables AP autotracking interface - remove if not needed
                 "uat", // use UAT protocol for auto-tracking
             ]
+        },
+        "var_characters_treasures": {
+            "display_name": "Characters & Treasures",
+            "flags": [
+                // "ap" //enables AP autotracking interface - remove if not needed
+                "uat", // use UAT protocol for auto-tracking
+            ]
         }
     },
     "versions_url": "https://raw.githubusercontent.com/marcmagus/falcon-dive-tracker/main/versions.json"
