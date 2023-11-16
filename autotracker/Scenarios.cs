@@ -87,23 +87,5 @@ namespace FF4PRAutotracker
 
         public static Dictionary<string,int> counts = new();
 
-        public static void SyncCounts()
-        {
-            Plugin.instance.Log.LogInfo("SyncCounts");
-            counts = new();
-            foreach (var item in Flags)
-            {
-                int t = Last.Interpreter.DataStorage.instance.Get(Last.Interpreter.DataStorage.Category.kTreasureFlag1,item.Key);
-                // Plugin.instance.Log.LogInfo($"  {item.Value}[{item.Key}] = {t}");
-
-                counts[item.Value] = (counts.ContainsKey(item.Value) ? counts[item.Value] : 0) + t;
-                
-            }
-
-        }
-
-
-
-
     }
 }

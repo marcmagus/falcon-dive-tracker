@@ -31,7 +31,7 @@ namespace FF4PRAutotracker
                     index += (category - Last.Interpreter.DataStorage.Category.kTreasureFlag1) * 256; // Byte-limited flag indices
                     if ((Treasures.Flags.ContainsKey(index)) && (UATServer.instance != null))
                     {
-                        Plugin.instance.Log.LogInfo($"Opened [{index}] {Treasures.Flags[index]}");
+                        // Plugin.instance.Log.LogDebug($"Opened [{index}] {Treasures.Flags[index]}");
                         UATServer.instance.SendTreasure(index);
                     }
                 }

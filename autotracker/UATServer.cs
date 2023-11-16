@@ -35,7 +35,6 @@ namespace FF4PRAutotracker
         /// </summary>
         public void Sync()
         {
-            Plugin.instance.Log.LogInfo("Sync");
             List<Var> vars = new List<Var>();
             foreach (var item in Scenarios.Flags)
             {
