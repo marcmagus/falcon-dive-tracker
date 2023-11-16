@@ -441,7 +441,7 @@
                         ],
                     },
                     {
-                        "name": "Tower of Zot Monster [4-7]",
+                        "name": "Tower of Zot Monster [6-7]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [
@@ -516,7 +516,7 @@
                         "access_rules": [ "treasure", "{}" ]
                     },
                     {
-                        "name": "Eblan Castle Monster [3-6]",
+                        "name": "Eblan Castle Monster [5-6]",
                         "item_count": 3,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
@@ -635,7 +635,7 @@
                                 "access_rules": [ "treasure", "{}" ]
                             },
                             {
-                                "name": "Tower of Babel Monster [5-8]",
+                                "name": "Tower of Babel Monster [7-8]",
                                 "item_count": 4,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
@@ -667,7 +667,7 @@
                                 "access_rules": [ "treasure", "{}" ]
                             },
                             {
-                                "name": "Cave of Summons Monster [5-8]",
+                                "name": "Cave of Summons Monster [7-8]",
                                 "item_count": 1,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
@@ -735,7 +735,7 @@
                                 "access_rules": [ "treasure", "{}" ]
                             },
                             {
-                                "name": "Sylvan Cave Monster [5-8]",
+                                "name": "Sylvan Cave Monster [7-8]",
                                 "item_count": 1,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
@@ -784,7 +784,7 @@
                         "access_rules": [ "treasure", "{}" ]
                     },
                     {
-                        "name": "Cave of Eblan Monster [6-8]",
+                        "name": "Cave of Eblan Monster [7-8]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
@@ -796,7 +796,7 @@
                         "access_rules": [ "treasure", "{}" ]
                     },
                     {
-                        "name": "Tower of Babel Monster [6-9]",
+                        "name": "Tower of Babel Monster [8-9]",
                         "item_count": 1,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
@@ -848,7 +848,7 @@
                                 "access_rules": [ "treasure", "{}" ]
                             },
                             {
-                                "name": "Western Lunar Path Monster [7-9]",
+                                "name": "Western Lunar Path Monster [8-9]",
                                 "item_count": 1,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
@@ -880,7 +880,7 @@
                                 "access_rules": [ "treasure", "{}" ]
                             },
                             {
-                                "name": "Giant of Babel Monster [6-9]",
+                                "name": "Giant of Babel Monster [8-9]",
                                 "item_count": 1,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
@@ -924,7 +924,7 @@
                                 "access_rules": [ "treasure", "{}" ]
                             },
                             {
-                                "name": "Lunar Subterrane Monster [7-9]",
+                                "name": "Lunar Subterrane Monster [8-9]",
                                 "item_count": 9,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
