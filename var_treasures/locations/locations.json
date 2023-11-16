@@ -720,13 +720,11 @@
                     },
                     {
                         "name": "Sylvan Cave",
-                        "access_rules": [
-                            "frying-pan"
-                        ],
                         "sections": [
                             {
                                 "hosted_item": "boss-sylvan-cave",
-                                "name": "Sylphs"
+                                "name": "Sylphs",
+                                "access_rules": [ "frying-pan" ]
                             },
                             {
                                 "name": "Sylvan Cave [4-7]",
