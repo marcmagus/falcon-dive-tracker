@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.1.0",
+            "download_url": "https://github.com/marcmagus/falcon-dive-tracker/releases/download/v1.1.0/FF4FalconDiveTracker-v1.1.0.zip",
+            "sha256": "e876943533ac009cf77d4f6ee5503178e185a10055e636d2a3a1b6377e150df3",
+            "changelog": [
+                "Optional Treasure tracking. For Autotracking also download/upgrade plugin at https://github.com/marcmagus/falcon-dive-tracker/releases/tag/v1.1.0"
+                ]
+        },
+        {
             "package_version": "1.0.0",
             "download_url": "https://github.com/marcmagus/falcon-dive-tracker/releases/download/v1.0.0/FF4FalconDiveTracker-v1.0.0.zip",
             "sha256": "95697c6722be962c7550b3241e77ad77d304ec2b210f10529d3b84a8cdc0e7f3",
