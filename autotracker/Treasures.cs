@@ -228,7 +228,7 @@ namespace FF4PRAutotracker
             [221] = "Lower Babel/Tower of Babel Monster [7-8]", // Map_30151_10
             [222] = "Lower Babel/Tower of Babel [4-7]", // Map_30151_11
             [223] = "Lower Babel/Tower of Babel [4-7]", // Map_30151_11
-            [224] = "Upper Babel/Tower of Babel [4-7]", // Map_30151_14, Map_30171_8
+            [224] = "Lower Babel/Tower of Babel [4-7]", // Map_30151_14, Map_30171_8
             [225] = "Upper Babel/Cave of Eblan [4-6]", // Map_30161_1
             [226] = "Upper Babel/Cave of Eblan [4-6]", // Map_30161_1
             [227] = "Upper Babel/Cave of Eblan [4-6]", // Map_30161_1

@@ -630,7 +630,7 @@
                             },
                             {
                                 "name": "Tower of Babel [4-7]",
-                                "item_count": 11,
+                                "item_count": 12,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
                             },
@@ -789,7 +789,7 @@
                     },
                     {
                         "name": "Tower of Babel [4-7]",
-                        "item_count": 8,
+                        "item_count": 7,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
                     },
