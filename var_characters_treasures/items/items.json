@@ -1,0 +1,685 @@
+[
+    {
+        "name": "Bomb Ring",
+        "type": "toggle",
+        "img": "images/items/bomb-ring.png",
+        "codes": "bomb-ring"
+    },
+    {
+        "name": "Twin Harp",
+        "type": "toggle",
+        "img": "images/items/twin-harp.png",
+        "codes": "twin-harp"
+    },
+    {
+        "name": "Rat Tail",
+        "type": "toggle",
+        "img": "images/items/rat-tail.png",
+        "codes": "rat-tail"
+    },
+    {
+        "name": "Dark Crystal",
+        "type": "toggle",
+        "img": "images/items/dark-crystal.png",
+        "codes": "dark-crystal"
+    },
+    {
+        "name": "Kaipo Inn Pass",
+        "type": "toggle",
+        "img": "images/items/kaipo-pass.png",
+        "codes": "kaipo-pass"
+    },
+    {
+        "name": "Earth Crystal",
+        "type": "toggle",
+        "img": "images/items/earth-crystal.png",
+        "codes": "earth-crystal"
+    },
+    {
+        "name": "Dr. Lugae's Key",
+        "type": "toggle",
+        "img": "images/items/lugae-key.png",
+        "codes": "lugae-key"
+    },
+    {
+        "name": "Adamantite",
+        "type": "toggle",
+        "img": "images/items/adamantite.png",
+        "codes": "adamantite"
+    },
+    {
+        "name": "Sand Ruby",
+        "type": "toggle",
+        "img": "images/items/sand-ruby.png",
+        "codes": "sand-ruby"
+    },
+    {
+        "name": "Magma Rock",
+        "type": "toggle",
+        "img": "images/items/magma-rock.png",
+        "codes": "magma-rock"
+    },
+    {
+        "name": "Luca's Necklace",
+        "type": "toggle",
+        "img": "images/items/lucas-necklace.png",
+        "codes": "lucas-necklace"
+    },
+    {
+        "name": "Sword of Legend",
+        "type": "toggle",
+        "img": "images/items/legend-sword.png",
+        "codes": "legend-sword"
+    },
+    {
+        "name": "Baron Key",
+        "type": "toggle",
+        "img": "images/items/baron-key.png",
+        "codes": "baron-key"
+    },
+    {
+        "name": "Hovercraft",
+        "type": "toggle",
+        "img": "images/items/hovercraft.png",
+        "codes": "hovercraft"
+    },
+    {
+        "name": "Frying Pan",
+        "type": "toggle",
+        "img": "images/items/frying-pan.png",
+        "codes": "frying-pan"
+    },
+    {
+        "name": "Pink Tail",
+        "type": "toggle",
+        "img": "images/items/pink-tail.png",
+        "codes": "pink-tail"
+    },
+    {
+        "name": "Crystal Shards",
+        "type": "progressive",
+        "allow_disabled": false,
+        "capturable": true,
+        "codes": "crystal-shards",
+        "stages": [
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "@disabled"
+            },
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "overlay|images/overlay_1.png, @disabled"
+            },
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "overlay|images/overlay_2.png, @disabled"
+            },
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "overlay|images/overlay_3.png",
+                "codes": "crystal"
+            },
+            {
+                "img": "images/items/crystal-shard.png",
+                "img_mods": "overlay|images/overlay_4.png"
+            }
+        ]
+    },
+    {
+        "name": "Nothing",
+        "type": "progressive",
+        "allow_disabled": false,
+        "capturable": true,
+        "codes": "nothings",
+        "stages": [
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "@disabled"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_1.png, @disabled"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_2.png, @disabled"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_3.png",
+                "codes": "nothing_3"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_4.png",
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_5.png",
+                "codes": "nothing_5"
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_6.png",
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_7.png",
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_8.png",
+            },
+            {
+                "img": "images/items/nothing.png",
+                "img_mods": "overlay|images/overlay_9.png",
+            }
+        ]
+    },
+// Below here are "Items" for Location grid
+    {
+        "name": "Mist Dragon",
+        "type": "toggle",
+        "img": "images/bosses/mist-dragon.png",
+        "codes": "boss-mist-dragon"
+    },
+    {
+        "name": "Rydia",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-rydia.png",
+        "codes": "boss-rydia"
+    },
+    {
+        "name": "Baron Soldiers",
+        "type": "toggle",
+        "img": "images/bosses/baron-soldiers.png",
+        "codes": "boss-baron-soldiers"
+    },
+    {
+        "name": "Sahagin",
+        "type": "toggle",
+        "img": "images/bosses/waterhag.png",
+        "codes": "boss-waterhag"
+    },
+    {
+        "name": "Octomammoth",
+        "type": "toggle",
+        "img": "images/bosses/octomamm.png",
+        "codes": "boss-octomamm"
+    },
+    {
+        "name": "Edward",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-edward.png",
+        "codes": "boss-edward"
+    },
+    {
+        "name": "Antlion",
+        "type": "toggle",
+        "img": "images/bosses/antlion.png",
+        "codes": "boss-antlion"
+    },
+    {
+        "name": "Mom Bomb",
+        "type": "toggle",
+        "img": "images/bosses/mombomb.png",
+        "codes": "boss-mombomb"
+    },
+    {
+        "name": "Fabul Gauntlet",
+        "type": "toggle",
+        "img": "images/bosses/fabul-gauntlet.png",
+        "codes": "boss-fabul-gauntlet"
+    },
+    {
+        "name": "Scarmiglione",
+        "type": "toggle",
+        "img": "images/bosses/scarmiglione.png",
+        "codes": "boss-scarmiglione"
+    },
+    {
+        "name": "Scarmiglione Z",
+        "type": "toggle",
+        "img": "images/bosses/scarmiglione-z.png",
+        "codes": "boss-scarmiglione-z"
+    },
+    {
+        "name": "Dark Knight Cecil",
+        "type": "toggle",
+        "img": "images/bosses/dkcecil.png",
+        "codes": "boss-dkcecil"
+    },
+    {
+        "name": "Baron Guards",
+        "type": "toggle",
+        "img": "images/bosses/baron-guards.png",
+        "codes": "boss-baron-guards"
+    },
+    {
+        "name": "Yang",
+        "type": "toggle",
+        "img": "images/bosses/yang.png",
+        "codes": "boss-yang"
+    },
+    {
+        "name": "Baigan",
+        "type": "toggle",
+        "img": "images/bosses/baigan.png",
+        "codes": "boss-baigan"
+    },
+    {
+        "name": "Cagnazzo",
+        "type": "toggle",
+        "img": "images/bosses/cagnazzo.png",
+        "codes": "boss-cagnazzo"
+    },
+    {
+        "name": "Odin",
+        "type": "toggle",
+        "img": "images/bosses/odin.png",
+        "codes": "boss-odin"
+    },
+    {
+        "name": "Dark Elf",
+        "type": "toggle",
+        "img": "images/bosses/dark-elf.png",
+        "codes": "boss-dark-elf"
+    },
+    {
+        "name": "Magus Sisters",
+        "type": "toggle",
+        "img": "images/bosses/magus-sisters.png",
+        "codes": "boss-magus-sisters"
+    },
+    {
+        "name": "Barbariccia",
+        "type": "toggle",
+        "img": "images/bosses/barbariccia.png",
+        "codes": "boss-barbariccia"
+    },
+    {
+        "name": "Rat Tail",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-tail-npc.png",
+        "codes": "boss-rat-tail"
+    },
+    {
+        "name": "Nothing Vending Machine",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-corio.png",
+        "codes": "boss-nothing-machine"
+    },
+    {
+        "name": "Calcobrena",
+        "type": "toggle",
+        "img": "images/bosses/calcobrena.png",
+        "codes": "boss-calcobrena"
+    },
+    {
+        "name": "Golbez",
+        "type": "toggle",
+        "img": "images/bosses/golbez.png",
+        "codes": "boss-golbez"
+    },
+    {
+        "name": "Dr. Lugae",
+        "type": "toggle",
+        "img": "images/bosses/lugae.png",
+        "codes": "boss-lugae"
+    },
+    {
+        "name": "Dark Imps",
+        "type": "toggle",
+        "img": "images/bosses/dark-imps.png",
+        "codes": "boss-dark-imps"
+    },
+    {
+        "name": "Asura",
+        "type": "toggle",
+        "img": "images/bosses/asura.png",
+        "codes": "boss-asura"
+    },
+    {
+        "name": "Leviathan",
+        "type": "toggle",
+        "img": "images/bosses/leviathan.png",
+        "codes": "boss-leviathan"
+    },
+    {
+        "name": "Demon Wall",
+        "type": "toggle",
+        "img": "images/bosses/demon-wall.png",
+        "codes": "boss-demon-wall"
+    },
+    {
+        "name": "Sylphs",
+        "type": "toggle",
+        "img": "images/bosses/ff4pr-sylph.png",
+        "codes": "boss-sylvan-cave"
+    },
+    {
+        "name": "King and Queen Eblan",
+        "type": "toggle",
+        "img": "images/bosses/king-queen-eblan.png",
+        "codes": "boss-king-queen-eblan"
+    },
+    {
+        "name": "Rubicante",
+        "type": "toggle",
+        "img": "images/bosses/rubicante.png",
+        "codes": "boss-rubicante"
+    },
+    {
+        "name": "Bahamut",
+        "type": "toggle",
+        "img": "images/bosses/bahamut.png",
+        "codes": "boss-bahamut"
+    },
+    {
+        "name": "Elemental Lords",
+        "type": "toggle",
+        "img": "images/bosses/elements.png",
+        "codes": "boss-elements"
+    },
+    {
+        "name": "CPU",
+        "type": "toggle",
+        "img": "images/bosses/cpu.png",
+        "codes": "boss-cpu"
+    },
+    {
+        "name": "White Dragon",
+        "type": "toggle",
+        "img": "images/bosses/white-dragon.png",
+        "codes": "boss-white-dragon"
+    },
+    {
+        "name": "Dark Bahamut",
+        "type": "toggle",
+        "img": "images/bosses/dark-bahamut.png",
+        "codes": "boss-dark-bahamut"
+    },
+    {
+        "name": "Plague",
+        "type": "toggle",
+        "img": "images/bosses/plague.png",
+        "codes": "boss-plague"
+    },
+    {
+        "name": "Lunasaur",
+        "type": "toggle",
+        "img": "images/bosses/lunasaur.png",
+        "codes": "boss-lunasaur"
+    },
+    {
+        "name": "Ogopogo",
+        "type": "toggle",
+        "img": "images/bosses/ogopogo.png",
+        "codes": "boss-ogopogo"
+    },
+    {
+        "name": "Hero",
+        "type": "progressive_toggle",
+        "codes": "character-1",
+        "stages": [
+            {
+                "img": "images/characters/unknown.png",
+                "codes": "character",
+            },
+            {
+                "img": "images/characters/dkCecil.png",
+            },
+            {
+                "img": "images/characters/kain.png",
+            },
+            {
+                "img": "images/characters/rosa.png",
+            },
+            {
+                "img": "images/characters/rydia.png",
+            },
+            {
+                "img": "images/characters/cid.png",
+            },
+            {
+                "img": "images/characters/tellah.png",
+            },
+            {
+                "img": "images/characters/edward.png",
+            },
+            {
+                "img": "images/characters/yang.png",
+            },
+            {
+                "img": "images/characters/palom.png",
+            },
+            {
+                "img": "images/characters/porom.png",
+            },
+            {
+                "img": "images/characters/edge.png",
+            },
+            {
+                "img": "images/characters/fusoya.png",
+            },
+            {
+                "img": "images/characters/cecil.png",
+            },
+            {
+                "img": "images/characters/golbez.png",
+            },
+        ],
+    },
+    {
+        "name": "Character 2",
+        "type": "progressive_toggle",
+        "codes": "character-2",
+        "stages": [
+            {
+                "img": "images/characters/unknown.png",
+                "codes": "character",
+            },
+            {
+                "img": "images/characters/dkCecil.png",
+            },
+            {
+                "img": "images/characters/kain.png",
+            },
+            {
+                "img": "images/characters/rosa.png",
+            },
+            {
+                "img": "images/characters/rydia.png",
+            },
+            {
+                "img": "images/characters/cid.png",
+            },
+            {
+                "img": "images/characters/tellah.png",
+            },
+            {
+                "img": "images/characters/edward.png",
+            },
+            {
+                "img": "images/characters/yang.png",
+            },
+            {
+                "img": "images/characters/palom.png",
+            },
+            {
+                "img": "images/characters/porom.png",
+            },
+            {
+                "img": "images/characters/edge.png",
+            },
+            {
+                "img": "images/characters/fusoya.png",
+            },
+            {
+                "img": "images/characters/cecil.png",
+            },
+            {
+                "img": "images/characters/golbez.png",
+            },
+        ],
+    },
+    {
+        "name": "Character 3",
+        "type": "progressive_toggle",
+        "codes": "character-3",
+        "stages": [
+            {
+                "img": "images/characters/unknown.png",
+                "codes": "character",
+            },
+            {
+                "img": "images/characters/dkCecil.png",
+            },
+            {
+                "img": "images/characters/kain.png",
+            },
+            {
+                "img": "images/characters/rosa.png",
+            },
+            {
+                "img": "images/characters/rydia.png",
+            },
+            {
+                "img": "images/characters/cid.png",
+            },
+            {
+                "img": "images/characters/tellah.png",
+            },
+            {
+                "img": "images/characters/edward.png",
+            },
+            {
+                "img": "images/characters/yang.png",
+            },
+            {
+                "img": "images/characters/palom.png",
+            },
+            {
+                "img": "images/characters/porom.png",
+            },
+            {
+                "img": "images/characters/edge.png",
+            },
+            {
+                "img": "images/characters/fusoya.png",
+            },
+            {
+                "img": "images/characters/cecil.png",
+            },
+            {
+                "img": "images/characters/golbez.png",
+            },
+        ],
+    },
+    {
+        "name": "Character 4",
+        "type": "progressive_toggle",
+        "codes": "character-4",
+        "stages": [
+            {
+                "img": "images/characters/unknown.png",
+                "codes": "character",
+            },
+            {
+                "img": "images/characters/dkCecil.png",
+            },
+            {
+                "img": "images/characters/kain.png",
+            },
+            {
+                "img": "images/characters/rosa.png",
+            },
+            {
+                "img": "images/characters/rydia.png",
+            },
+            {
+                "img": "images/characters/cid.png",
+            },
+            {
+                "img": "images/characters/tellah.png",
+            },
+            {
+                "img": "images/characters/edward.png",
+            },
+            {
+                "img": "images/characters/yang.png",
+            },
+            {
+                "img": "images/characters/palom.png",
+            },
+            {
+                "img": "images/characters/porom.png",
+            },
+            {
+                "img": "images/characters/edge.png",
+            },
+            {
+                "img": "images/characters/fusoya.png",
+            },
+            {
+                "img": "images/characters/cecil.png",
+            },
+            {
+                "img": "images/characters/golbez.png",
+            },
+        ],
+    },
+    {
+        "name": "Character 5",
+        "type": "progressive_toggle",
+        "codes": "character-5",
+        "stages": [
+            {
+                "img": "images/characters/unknown.png",
+                "codes": "character",
+            },
+            {
+                "img": "images/characters/dkCecil.png",
+            },
+            {
+                "img": "images/characters/kain.png",
+            },
+            {
+                "img": "images/characters/rosa.png",
+            },
+            {
+                "img": "images/characters/rydia.png",
+            },
+            {
+                "img": "images/characters/cid.png",
+            },
+            {
+                "img": "images/characters/tellah.png",
+            },
+            {
+                "img": "images/characters/edward.png",
+            },
+            {
+                "img": "images/characters/yang.png",
+            },
+            {
+                "img": "images/characters/palom.png",
+            },
+            {
+                "img": "images/characters/porom.png",
+            },
+            {
+                "img": "images/characters/edge.png",
+            },
+            {
+                "img": "images/characters/fusoya.png",
+            },
+            {
+                "img": "images/characters/cecil.png",
+            },
+            {
+                "img": "images/characters/golbez.png",
+            },
+        ],
+    },
+]

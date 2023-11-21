@@ -20,6 +20,7 @@ namespace FF4PRAutotracker
             {
                 if (category == Last.Interpreter.DataStorage.Category.kScenarioFlag1)
                 {
+                    Plugin.instance.Log.LogInfo($"Set Scenario {index} => {value}");
                     if ((Scenarios.Flags.ContainsKey(index)) && (UATServer.instance != null))
                     {
                         UATServer.instance.SendScenario(index,value);

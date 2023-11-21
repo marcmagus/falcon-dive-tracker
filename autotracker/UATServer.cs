@@ -51,6 +51,16 @@ namespace FF4PRAutotracker
                     value=item.Value
                 });
             }
+            foreach (var character in Last.Management.UserDataManager.Instance().GetOwnedCharactersClone(false))
+            {
+                vars.Add(new Var{
+                    name=Characters.IdToSlot[character.characterStatusId],
+                    value=new List<Object> {
+                        true,
+                        Characters.Jobs[character.JobId]
+                        },
+                });
+            }
 
             SendAsync(JsonSerializer.Serialize(vars),null);
             /* Plugin.instance.Log.LogDebug($"{JsonSerializer.Serialize(vars)}"); */
@@ -70,10 +80,32 @@ namespace FF4PRAutotracker
                         name = Scenarios.Flags[index],
                         value = value,
                     }}), null);
+                Plugin.instance.Log.LogInfo($"Scenario: [{index}] -> {value}");
             }
             else
             {
                 Plugin.instance.Log.LogError($"Attempted to send unknown variable {index}");
+            }
+        }
+
+        public void SendCharacter(int id, int jobId)
+        {
+            Plugin.instance.Log.LogInfo($"Sending Character {id}...");
+            if (Characters.IdToSlot.ContainsKey(id) && Characters.Jobs.ContainsKey(jobId))
+            {
+                SendAsync(JsonSerializer.Serialize(new[] {
+                new Var {
+                    name = Characters.IdToSlot[id],
+                    value = new List<Object> {
+                        true,
+                        Characters.Jobs[jobId],
+                    },
+                }}), null);
+                Plugin.instance.Log.LogInfo($"Character: [{id}] -> {Characters.IdToSlot[id]} = {jobId}");
+            }
+            else
+            {
+                Plugin.instance.Log.LogError($"Attempted to send unknown character {id} job {jobId}");
             }
         }
 

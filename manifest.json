@@ -1,7 +1,7 @@
 ﻿{
     "name": "Falcon Dive Tracker",
     "game_name": "Falcon Dive",
-    "package_version": "1.1.1",
+    "package_version": "1.1.1-characters",
     "package_uid": "falcon-dive",
     "platform": "PC",
     "author": "marcmagus",
@@ -22,6 +22,13 @@
         },
         "var_treasures": {
             "display_name": "Treasures",
+            "flags": [
+                // "ap" //enables AP autotracking interface - remove if not needed
+                "uat", // use UAT protocol for auto-tracking
+            ]
+        },
+        "var_characters_treasures": {
+            "display_name": "Characters & Treasures",
             "flags": [
                 // "ap" //enables AP autotracking interface - remove if not needed
                 "uat", // use UAT protocol for auto-tracking
