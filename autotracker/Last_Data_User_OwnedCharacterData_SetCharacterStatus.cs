@@ -35,24 +35,11 @@ namespace FF4PRAutotracker
             {
                 if (isInit)
                 {
-                    Plugin.instance.Log.LogInfo($"New CharacterStatus id={master.Id} jobId={master.JobId} isInit={isInit}");
                     if (Characters.IdToSlot.ContainsKey(master.Id) && (UATServer.instance != null))
                     {
-                        Plugin.instance.Log.LogInfo($"    Slot found for {master.Id} : {Characters.IdToSlot[master.Id]}");
-
                         UATServer.instance.SendCharacter(master.Id, master.JobId);
                     }
                 }
-
-                /*
-                StringBuilder sb = new StringBuilder();
-                sb.Append("Set(");
-                sb.Append(" 'category': ").Append(category.ToString());
-                sb.Append(" 'index': ").Append(index.ToString());
-                sb.Append(" 'value': ").Append(value.ToString());
-                sb.Append(" )");
-                Plugin.instance.Log.LogDebug(sb.ToString());
-                */
             }
             catch (System.Exception ex)
             {
