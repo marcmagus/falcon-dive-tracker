@@ -5,7 +5,7 @@
     <AssemblyName>FF4FalconDive.Autotracker.PopTracker</AssemblyName>
     <Product>Falcon Dive Autotracker for PopTracker</Product>
     <Description>Autotracker Plugin to communicate with PopTracker via UAT</Description>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <DefaultItemExcludes>lib\decompiled\**</DefaultItemExcludes>
