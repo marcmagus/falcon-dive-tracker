@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.2.0",
+            "download_url": "https://github.com/marcmagus/falcon-dive-tracker/releases/download/v1.2.0/FF4FalconDiveTracker-v1.2.0.zip",
+            "sha256": "6bd6863b15256fa6ce5ad0425feca4ea94c00f945d9f8703bcdd404be6bb41f9",
+            "changelog": [
+                "Character tracking/autotracking. For Autotracking also download/upgrade plugin at https://github.com/marcmagus/falcon-dive-tracker/releases/download/v1.2.0/FF4FalconDiveAutotrackerPlugin-v1.2.0.zip"
+                ]
+        },
+        {
             "package_version": "1.1.1",
             "download_url": "https://github.com/marcmagus/falcon-dive-tracker/releases/download/v1.1.1/FF4FalconDiveTracker-v1.1.1.zip",
             "sha256": "4a1674bbe602c33094cf27a7c4feb4ab590a3522c44672eb3d3695f789e1ba46",
