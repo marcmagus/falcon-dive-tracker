@@ -420,7 +420,6 @@
     {
         "name": "Hero",
         "type": "progressive_toggle",
-        "img": "images/characters/dkCecil.png",
         "codes": "character-1",
         "stages": [
             {
@@ -474,7 +473,6 @@
     {
         "name": "Character 2",
         "type": "progressive_toggle",
-        "img": "images/characters/dkCecil.png",
         "codes": "character-2",
         "stages": [
             {
@@ -528,7 +526,6 @@
     {
         "name": "Character 3",
         "type": "progressive_toggle",
-        "img": "images/characters/dkCecil.png",
         "codes": "character-3",
         "stages": [
             {
@@ -582,7 +579,6 @@
     {
         "name": "Character 4",
         "type": "progressive_toggle",
-        "img": "images/characters/dkCecil.png",
         "codes": "character-4",
         "stages": [
             {
@@ -636,7 +632,6 @@
     {
         "name": "Character 5",
         "type": "progressive_toggle",
-        "img": "images/characters/dkCecil.png",
         "codes": "character-5",
         "stages": [
             {
