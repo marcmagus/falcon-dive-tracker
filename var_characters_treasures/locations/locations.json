@@ -533,8 +533,8 @@
             {
                 "name": "Underground",
                 "access_rules": [
-                    "magma-rock,[$magmaRockInLogic]",
-                    "hovercraft,[$moonInLogic]"
+                    "magma-rock,[character:2]",
+                    "hovercraft,[character:3]"
                 ],
                 "children": [
                     {
@@ -630,7 +630,7 @@
                             },
                             {
                                 "name": "Tower of Babel [4-7]",
-                                "item_count": 11,
+                                "item_count": 12,
                                 "clear_as_group": false,
                                 "access_rules": [ "treasure", "{}" ]
                             },
@@ -758,7 +758,7 @@
             {
                 "name": "Upper Babel",
                 "access_rules": [
-                    "hovercraft, [$moonInLogic]"
+                    "hovercraft, [character:3]"
                 ],
                 "sections": [
                     {
@@ -789,7 +789,7 @@
                     },
                     {
                         "name": "Tower of Babel [4-7]",
-                        "item_count": 8,
+                        "item_count": 7,
                         "clear_as_group": false,
                         "access_rules": [ "treasure", "{}" ]
                     },
@@ -811,7 +811,7 @@
             {
                 "name": "Moon",
                 "access_rules": [
-                    "dark-crystal, [$moonInLogic]"
+                    "dark-crystal, [character:3]"
                 ],
                 "children": [
                     {

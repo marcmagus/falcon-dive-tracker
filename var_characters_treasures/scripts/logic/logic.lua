@@ -4,7 +4,11 @@ function characterCount()
 end
 
 function magmaRockInLogic()
-    return Tracker:ProviderCountForCode("character-1") + Tracker:ProviderCountForCode("character-2") + Tracker:ProviderCountForCode("character-3") + Tracker:ProviderCountForCode("character-4") + Tracker:ProviderCountForCode("character-5") >= 2
+    return characterCount() >= 2
+end
+
+function hovercraftInLogic()
+    return characterCount() >= 3
 end
 
 function moonInLogic()
